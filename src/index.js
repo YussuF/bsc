@@ -1,32 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// Loading Stylesheet
 import './index.css';
+// Library for Audio
 import ReactAudioPlayer from 'react-audio-player';
+// Library for Routing
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// Data from Neural Network
 import myData from './data3.json';
 
 function Index() {
+	// test for JSON Availability
 	tryRequire('./data.json') ? console.log(myData) : alert('JSON not found');
-	//const json_string = '[{"id":1,"first_name":"Georgetta","last_name":"Neiland","poem_name":"Liliaceae","audio":"BibendumImperdiet.avi","class":"Documentary","poem_text":"Trillium ludovicianum Harbison"},{"id":2,"first_name":"Isaak","last_name":"Cleef","poem_name":"Cyperaceae","audio":"EgetSemper.mp3","class":"Drama","poem_text":"Gahnia aspera Spreng. ssp. globosa (H. Mann) J. Kern"}]';
-	//console.log(JSON.parse(myData)); 
-	//const file = './data.json';
-	//const myObject = JSON.parse(file);
-  	//console.log(myObject);
-  	console.log(findpoem_confidence());
+
+ 	console.log(findpoem_confidence());
   	for (var i = myData.length - 1; i >= 0; i--) {
   	//console.log(myData[i].id);
   	}
+
   return (
   	<p className="hello">Hello World!</p>
   	);
 }
 
+
+// Wrapper for the Clssifier
 function ClassifierSite() {
   return (
   	<Classifier />
   	);
 }
 
+
+// Helper function for Availability testing
 const tryRequire = (path) => {
   try {
    return require(`${path}`);
@@ -35,6 +41,8 @@ const tryRequire = (path) => {
   }
 };
 
+
+// Finding Poems by c
 function findpoem_confidence(){
 	console.log(myData.length - 1);
 	for (var i = myData.length - 1; i >= 0; i--) {
