@@ -23,7 +23,6 @@ function Index() {
   	);
 }
 
-
 // Wrapper for the Clssifier
 function ClassifierSite() {
   return (
