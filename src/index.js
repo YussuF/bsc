@@ -40,7 +40,6 @@ const tryRequire = (path) => {
   }
 };
 
-
 // Finding Poems by c
 function findpoem_confidence(){
 	console.log(myData.length - 1);
