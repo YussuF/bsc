@@ -7,23 +7,33 @@ import ReactAudioPlayer from 'react-audio-player';
 // Library for Routing
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // Data from Neural Network
-import myData from './data3.json';
+
+let textdata = require('./datamock.json');
+let machinedata = require('./machinemock.json');
+
+var current_poem = "0";
+var current_confidence = 0;
+var current_distribution = [];
+var current_class = "";
+var current_textdata = [];
+var current_lines = [];
+
 
 function Index() {
 	// test for JSON Availability
-	tryRequire('./data.json') ? console.log(myData) : alert('JSON not found');
-
+	tryRequire('./datamock.json') ? console.log("all fine") : alert('JSON not found');
+	tryRequire('./machinemock.json') ? console.log("all fine") : alert('JSON not found');
+ 	console.log("Findpoem:");
  	console.log(findpoem_confidence());
-  	for (var i = myData.length - 1; i >= 0; i--) {
-  	//console.log(myData[i].id);
-  	}
+	console.log("-------");
+	console.log(Object.keys(machinedata).length);
 
   return (
   	<p className="hello">Hello World!</p>
   	);
 }
 
-// Wrapper for the Clssifier
+// Wrapper for the Classifier
 function ClassifierSite() {
   return (
   	<Classifier />
@@ -42,20 +52,28 @@ const tryRequire = (path) => {
 
 // Finding Poems by c
 function findpoem_confidence(){
-	console.log(myData.length - 1);
-	for (var i = myData.length - 1; i >= 0; i--) {
-		var tmp = 0;
-		var id = null;
-		if (myData[i].confidence > tmp) {
-			tmp = myData[i].confidence;
-			id = myData[i].id;
+	var tmp = 0;
+	var res = 0;
+	var tmp_i = 0;
+	for (var i = Object.keys(machinedata).length - 1; i >= 0; i--) {
+		if (machinedata[i]["Confidence"] > tmp) {
+			tmp = machinedata[i]["Confidence"];
+			res = machinedata[i]["id"];
+			tmp_i = i;
 		}
 	}
-	return id;
+	current_confidence = machinedata[tmp_i]["Confidence"];
+	current_distribution = machinedata[tmp_i]["distribution"];
+	current_class = machinedata[tmp_i]["class"];
+	current_textdata = textdata[res];
+	current_lines = current_textdata["lines"];
+	console.log(current_lines[0]["line"]);
+	return (tmp, res);
 }
 
 
 function Categories() {
+
 }
 
 function AppRouter() {
@@ -68,7 +86,7 @@ function AppRouter() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about/">Classifier</Link>
+              <Link to="/classifier/">Classifier</Link>
             </li>
             <li>
               <Link to="/categories/">Categories</Link>
@@ -77,7 +95,7 @@ function AppRouter() {
         </nav>
 
         <Route path="/" exact component={Index} />
-        <Route path="/about/" component={ClassifierSite} />
+        <Route path="/classifier/" component={ClassifierSite} />
         <Route path="/categories/" component={Categories} />
       </div>
     </Router>
@@ -87,146 +105,20 @@ function AppRouter() {
 export default AppRouter;
 
 
-function Square(props){
-	return (
-		<button className="square" onClick={props.onClick}>
-		{props.value}
-		</button>
-		);
-}
-
-class InputText extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.changeValue = this.changeValue.bind(this);
-  }
-
-  changeValue() {
-    console.log('Placeholder to prevent bug');
-  }
-
-  render() {
-
-   // Use destructuring to grab the individual properties from params
-   const { type, name, classname, placeholder } = this.props.params;
-
-    // Use those properties in the returned component elements
-    return (
-      <div className={classname}>
-        <label htmlFor={name}>Test</label>
-        <input
-          onChange={this.changeValue}
-          name={name}
-          type={type}
-          placeholder={placeholder}
-        />
-      </div>
-    );
-  }
-}
 
 
-class Board extends React.Component {
-	constructor(props){
-		super(props);
-		this.state = {
-			squares: Array(9).fill(null),
-			xIsNext: true,
-		};
-	}
-
-	handleClick(i){
-		const squares = this.state.squares.slice();
-		if (calculateWinner(squares) || squares[i] ) {
-			return;
-		}
-		squares[i] = this.state.xIsNext ? 'X' : 'O';
-		this.setState({
-			squares:squares,
-			xIsNext: !this.state.xIsNext,
-		});
-	}
-
-	renderSquare(i) {
-		return (
-			<Square 
-			value={this.state.squares[i]}
-			onClick={() => this.handleClick(i)}
-			/>
-			);
-	}
-
-	render() {
-		const winner = calculateWinner(this.state.squares);
-		let status;
-		if(winner) {
-			status = 'Winner: ' + winner;
-		} else{
-			status= 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-		}
-
-		return (
-			<div>
-			<div className="status">{status}</div>
-			<div className="board-row">
-			{this.renderSquare(0)}
-			{this.renderSquare(1)}
-			{this.renderSquare(2)}
-			</div>
-			<div className="board-row">
-			{this.renderSquare(3)}
-			{this.renderSquare(4)}
-			{this.renderSquare(5)}
-			</div>
-			<div className="board-row">
-			{this.renderSquare(6)}
-			{this.renderSquare(7)}
-			{this.renderSquare(8)}
-			</div>
-			</div>
-			);
-	}
-}
-
-class Game extends React.Component {
-	render() {
-		return (
-			<div className="game">
-			<div className="game-board">
-			<Board />
-			</div>
-			<div className="game-info">
-	</div>
-	</div>
-	);
-	}
-}
 
 class Poem extends React.Component {
+
+
 	render(){
+	console.log(current_lines);
 		return (
 <div className="poem-wrap">
 <div className="poem">
-	<h3>1886</h3>
-	<p>Ostern am spätesten Termin,
-an der Elbe blühte schon der Flieder,
-dafür Anfang Dezember ein so unerhörter Schneefall,
-dass der gesamte Bahnverkehr
-in Nord- und Mitteldeutschland
-für Wochen zum Erliegen kam.
+	<h3>{ current_poem }</h3>
+	<p>
 
-Paul Heyse veröffentlicht eine einaktige Tragödie,
-Es ist Hochzeitsabend, die junge Frau entdeckt,
-dass ihr Mann einmal ihre Mutter geliebt hat,
-alle längst tot, immerhin
-von ihrer Tante, die Mutterstelle vertrat,
-hat sie ein Morphiumfläschchen:
-»störe das sanfte Mittel nicht«,
-sie sinkt zurück, hascht nach seiner Hand,
-Theodor (düster, aufschreiend):
-»Lydia! Mein Weib! Nimm mich mit Dir«! –
-Titel: »Zwischen Lipp’ und Kelchesrand.«
 	</p>
 </div>
 			<ReactAudioPlayer
@@ -243,14 +135,22 @@ class Input extends React.Component {
 		return (
 			<div className="corrector">
 			<p>Diese Angabe ist</p>
-			<button className="cor_correct">Korrekt</button>
+			{/*<input type="radio" className="cor_correct">Korrekt</input>
 			<br></br>
 			<p>Falsch, bei diesem Gedicht handelt es sich um </p>
-			<button className="cor_alt1">Variabler Versfuß</button>
-			<button className="cor_alt1">gehobenes Enjambement</button>
-			<button className="cor_alt1">unebetontes Enjambement</button>
-			<button className="cor_alt1">lettristische Dekomposition</button>
-			<button className="cor_alt1">syntaktische Dekomposition</button>
+			<input type="radio" className="cor_alt1">Variabler Versfuß</input>
+			<input type="radio" className="cor_alt1">gehobenes Enjambement</input>
+			<input type="radio" className="cor_alt1">unebetontes Enjambement</input>
+			<input type="radio" className="cor_alt1">lettristische Dekomposition</input>
+			<input type="radio" className="cor_alt1">syntaktische Dekomposition</input>*/}
+			<input type="radio" value="option1" checked={true} />Korrekt <br/>
+			<p> Falsch, es handelt sich um ein(e/en)</p>
+			<input type="radio" value="option1" checked={false} />Variabler Versfuß<br/>
+			<input type="radio" value="option1" checked={false} />gehobenes Enjambement<br/>
+			<input type="radio" value="option1" checked={false} />unbetontes Enjambement<br/>
+			<input type="radio" value="option1" checked={false} />lettristische Dekomposition <br/>
+			<input type="radio" value="option1" checked={false} />syntaktische Dekomposition
+			<button style={{float:"right", margin:"0 0 200px 0"}}>Nächstes Gedicht</button>
 			</div>
 			)
 	}
@@ -259,9 +159,10 @@ class Input extends React.Component {
 
 class Output extends React.Component {
 	render() {
+	console.log(current_poem);
 		return(
 			<div className="classifier">
-			<p>Dieses Gedicht wurde mit <u>95% Confidence</u> als <b>Parlando</b> klassifiziert. 
+			<p>Dieses Gedicht wurde mit <u>{ current_confidence }% Confidence</u> als <b>{ current_class }</b> klassifiziert. 
 			Weitere Konfidenzen </p><br></br>Weitere Konfidenzen :
 			<ul>
 			<li> <b>82 %</b> Variabler Versfuß</li>
@@ -287,6 +188,7 @@ class Header extends React.Component {
 
 class Classifier extends React.Component {
 	render() {
+	current_poem = findpoem_confidence(); 
 		return(
 			<div className="site">
 			<div className="headerwrap">
@@ -315,24 +217,3 @@ ReactDOM.render(
 	<AppRouter />,
 	document.getElementById('root')
 	);
-
-
-function calculateWinner(squares) {
-	const lines = [
-	[0, 1, 2],
-	[3, 4, 5],
-	[6, 7, 8],
-	[0, 3, 6],
-	[1, 4, 7],
-	[2, 5, 8],
-	[0, 4, 8],
-	[2, 4, 6],
-	];
-	for (let i = 0; i < lines.length; i++) {
-		const [a, b, c] = lines[i];
-		if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-			return squares[a];
-		}
-	}
-	return null;
-}

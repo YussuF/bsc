@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ReactAudioPlayer from 'react-audio-player';
 
+
 function Square(props){
 	return (
 		<button className="square" onClick={props.onClick}>
@@ -206,7 +207,7 @@ class Home extends React.Component {
 // ========================================
 
 ReactDOM.render(
-	<Home />,
+	//<Home />,
 	document.getElementById('root')
 	);
 

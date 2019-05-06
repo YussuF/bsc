@@ -1,0 +1,14 @@
+[
+{"id":"teils-teils",
+"class":"Parlando",
+"Confidence":"89",
+"distribution":{"Parlando":"89", "Kadenz":"72", "Variabler Versfuß":"56", "Sprungrhythmus":"20", "Synkopen":"45", "Rubato":"12", "Betontes Enjambement":"35"}},
+{"id":"der-minister-ii-863",
+"class":"Parlando",
+"Confidence":"82",
+"distribution":{"Parlando":"82", "Kadenz":"72", "Variabler Versfuß":"56", "Sprungrhythmus":"20", "Synkopen":"45", "Rubato":"12", "Betontes Enjambement":"35"}},
+{"id":"SONSTIGE_Oskar_Pastior_Der_Bug",
+"class":"Parlando",
+"Confidence":"84",
+"distribution":{"Parlando":"84", "Kadenz":"72", "Variabler Versfuß":"56", "Sprungrhythmus":"20", "Synkopen":"45", "Rubato":"12", "Betontes Enjambement":"35"}}
+]
