@@ -1,0 +1,28 @@
+Zeitplan BA
+
+24.7. deadline
+
+6.5. - 12.5. 	Seite bauen / Classifier Component
+13.5. - 19.5.	Seite bauen	/ Classifier Fixes and Categories
+20.5. - 26.5.	Seite bauen / User login and bugfixes
+27.5. - 2.6.	Seite finalisieren
+3.6. - 9.6.		Iteration 1  // Schreiben BA (setup)
+10.6. - 16.6.	Iteration 2  // Auswertung Daten // Schreiben BA
+17.6. - 23.6.	Iteration 3  // Auswertung Daten // Schreiben BA
+24.6. - 30.6.	n/a  // Iteration 4
+1.7. - 7.7.		Auswertung Daten und Schreiben der BA
+8.7. - 14.7.	Schreiben der BA
+15.7. - 21.7.	Schreiben der BA
+22.7. - 24.7	QA BA
+
+
+
+6.5. Setup for work @ uni
+7.5. Restructuring app into components
+8.5. Loading input into states & formatting
+9.5. Fixing states and propagating them through components
+10.5. Building workflow on site; writing to json outputs
+11.5. 
+12.5. Working flow in main component : classifier
+
+  
