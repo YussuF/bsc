@@ -1,8 +1,10 @@
 import React from "react";
+import Distributionitem from './distributionitem.js'
 
 class Output extends React.Component {
 state = {
-    distribution : []
+    distribution : [],
+    i:0
 }
 
 
@@ -18,7 +20,7 @@ state = {
     render(){
         for (var key in this.props.machinedata[0].distribution) {
             this.state.distribution.push(key);
-            this.state.distribution.push(this.props.machinedata[0].distribution[key]);
+            //this.state.distribution.push(this.props.machinedata[0].distribution[key]);
         }
         console.log('---1--------');
         console.log(...this.props.machinedata);
@@ -35,20 +37,17 @@ state = {
                     Weitere Konfidenzen </p>
                 <ul>
                     {this.state.distribution.map((test) => (
-                        <li>{test}</li>
-                        ))
+                      <div></div>
+                       //<Distributionitem key={test} />
+
+                    ))
                        //Object.values(this.props.machinedata[0].distribution);
                     }
 
-                    for(key in Object.keys(this.props.machinedata[0].distribution)){
-                        <div>test</div>
-                    }
-
-                    }         {Object.keys(this.props.machinedata[0].distribution).map( (propKey) => {
-                    propKe
-
-
+                    {Object.keys(this.props.machinedata[0].distribution).map( (propKey) => {
+                        <Distributionitem key={propKey} />
                     })}
+
 
 
 
