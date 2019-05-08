@@ -11,7 +11,7 @@ class Output extends React.Component {
 
     createConfidenceTable = () => {
         let table = []
-
+        // TODO: Hardcoded 0 for first poem, needs to be eval'd by machinedata[i].id === id of the current poem ; again 2 lines later
         for (var key in this.props.machinedata[0].distribution) {
             let children = []
             children.push(this.props.machinedata[0].distribution[key])
@@ -34,6 +34,7 @@ class Output extends React.Component {
         return(
 
             <div className="classifier_output">
+                {/*TODO: Hardcoded 0 */}
                 <p>Dieses Gedicht wurde mit <u>{this.props.machinedata[0].Confidence}% Confidence</u> als <b>Parlando</b> klassifiziert.
                     Weitere Konfidenzen </p>
 

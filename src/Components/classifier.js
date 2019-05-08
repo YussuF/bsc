@@ -5,7 +5,6 @@ import Output from './Classifier/test.js';
 
 {/*
     Classifier is the Wrapper for the classifier site, loading all jsons needed. Possibly this has to be moved to index.js once the poem is rendered dynamically and not hardcoded.
-    TODO: Failsafe for json load. Right now the site just breaks if it can't find one of the jsons.
 */}
 
 

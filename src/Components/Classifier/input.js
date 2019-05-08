@@ -29,6 +29,7 @@ class Input extends React.Component {
         let table = []
         for (var key in this.props.categorydata) {
             let children = []
+            // TODO: Hardcoded 0 is the first poem in machinemock, should be found via machinedata[i].id === id of the current poem
             if (this.props.categorydata[key] === this.props.machinedata[0].class)children.push('');
             else children.push(<div className="form-check">
                 <label>
@@ -62,6 +63,7 @@ class Input extends React.Component {
                             <input
                                 type="radio"
                                 name="input_form_radio"
+                                {/*TODO: value here is kinda shite. Perhaps make it something like correct or no action needed or such*/}
                                 value="option1"
                                 checked={this.state.selectedOption === "option1"}
                                 onChange={this.handleOptionChange}
