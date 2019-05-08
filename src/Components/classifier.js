@@ -3,32 +3,29 @@ import Poem from './Classifier/poem.js';
 import Input from './Classifier/input.js';
 import Output from './Classifier/test.js';
 
-let textdata = require('../datamock.json');
-let machinedata = require('../machinemock.json');
-let categorydata = require('../categorymock.json');
+{/*
+    Classifier is the Wrapper for the classifier site, loading all jsons needed. Possibly this has to be moved to index.js once the poem is rendered dynamically and not hardcoded.
+    TODO: Failsafe for json load. Right now the site just breaks if it can't find one of the jsons.
+*/}
+
 
 
 class Classifier extends React.Component {
-    state = {
-        machinedata: machinedata,
-        textdata: textdata,
-        categorydata: categorydata
-    }
+
 
 
     render() {
-    console.log(this.state.categorydata);
         return(
             <div className="site">
                 <div className="container">
                     <div className="left">
-                        <Output machinedata={this.state.machinedata} />
+                        <Output machinedata={this.props.machinedata} />
                     </div>
                     <div className="middle">
-                        <Poem textdata={this.state.textdata} />
+                        <Poem textdata={this.props.textdata} />
                     </div>
                     <div className="right">
-                        <Input machinedata={this.state.machinedata} categorydata={this.state.categorydata} />
+                        <Input machinedata={this.props.machinedata} categorydata={this.props.categorydata} />
                     </div>
                 </div>
             </div>

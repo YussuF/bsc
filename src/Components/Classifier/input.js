@@ -1,6 +1,10 @@
 import React from "react";
 
+{/*
+    Input takes care of the right-hand side of the classifier, namely the form for the user-input. Categories for the form are loaded dynamically from categorymock.json. Poem-class detected by NN is filtered from form.
+    TODO: Form Submit needs to save to json.
 
+*/}
 class Input extends React.Component {
 
     state = {

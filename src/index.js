@@ -10,6 +10,13 @@ import Home from './Components/home.js';
 import Header from './Components/Layout/header.js';
 import Categories from './Components/categories.js';
 
+{/*
+	Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
+*/}
+
+
+
+
 let textdata = require('./datamock.json');
 let machinedata = require('./machinemock.json');
 let categorydata = require('./categorymock.json');
@@ -60,7 +67,16 @@ class App extends React.Component {
 				</ul>
 				<Header />
 				<Route path="/" exact component={Home} />
-				<Route path="/classifier/" component={Classifier} machinedata={this.state.machinedata} textdata={this.state.machinedata} categorydata={this.state.categorydata} />
+				<Route
+					path="/classifier/"
+					render={
+						(props) => <Classifier {...props}
+											   machinedata={this.state.machinedata}
+											   categorydata={this.state.categorydata}
+											   textdata={this.state.textdata}
+						/>
+					}
+				/>
 				<Route path="/categories/" component={Categories} />
 			</div>
 		</Router>

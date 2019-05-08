@@ -1,6 +1,12 @@
 import React from "react";
 import ReactAudioPlayer from "react-audio-player";
 
+{/*
+    poem takes care of the middle part of the classifier site, namely the poem text itself. Lines of the poem come from datamock.json.
+    TODO: Poem title is hardcoded so far, the poem lines are loaded dynamically, but the name of the poem is hardcoded.
+*/}
+
+
 class Poem extends React.Component {
 
 
