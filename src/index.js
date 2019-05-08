@@ -12,6 +12,7 @@ import Categories from './Components/categories.js';
 
 let textdata = require('./datamock.json');
 let machinedata = require('./machinemock.json');
+let categorydata = require('./categorymock.json');
 
 var current_poem = "0";
 var current_confidence = 0;
@@ -28,7 +29,8 @@ class App extends React.Component {
 
 	state = {
 		textdata : textdata,
-		machinedata : machinedata
+		machinedata : machinedata,
+		categorydata: categorydata
 	}
 
 
@@ -58,7 +60,7 @@ class App extends React.Component {
 				</ul>
 				<Header />
 				<Route path="/" exact component={Home} />
-				<Route path="/classifier/" component={Classifier} machinedata={this.state.machinedata} textdata={this.state.machinedata} />
+				<Route path="/classifier/" component={Classifier} machinedata={this.state.machinedata} textdata={this.state.machinedata} categorydata={this.state.categorydata} />
 				<Route path="/categories/" component={Categories} />
 			</div>
 		</Router>

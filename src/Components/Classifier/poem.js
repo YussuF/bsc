@@ -8,13 +8,9 @@ class Poem extends React.Component {
 
     createPoemTable = () => {
         let table = []
-
-        // Outer loop to create parent
         for (var key in this.props.textdata["teils-teils"].lines) {
             let children = []
             children.push(this.props.textdata["teils-teils"].lines[key].line)
-
-            //Create the parent and add the children
             table.push(<tr>{children}</tr>)
         }
         return table

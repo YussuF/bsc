@@ -2,26 +2,79 @@ import React from "react";
 
 
 class Input extends React.Component {
+
+    state = {
+        selectedOption: "option1",
+    }
+
+
+    handleOptionChange = changeEvent => {
+        this.setState({
+            selectedOption: changeEvent.target.value
+        });
+    };
+
+    handleFormSubmit = formSubmitEvent => {
+        formSubmitEvent.preventDefault();
+
+        console.log('Submitted:', this.state.selectedOption);
+    }
+
+
+    createRadioTable = () => {
+        let table = []
+        for (var key in this.props.categorydata) {
+            let children = []
+            if (this.props.categorydata[key] === this.props.machinedata[0].class)children.push('');
+            else children.push(<div className="form-check">
+                <label>
+                    <input
+                        type="radio"
+                        name="input_form_radio"
+                        value={key}
+                        checked={this.state.selectedOption === key}
+                        onChange={this.handleOptionChange}
+                        className="form-radio-input"
+                    />
+                    {this.props.categorydata[key]}
+                </label>
+            </div>)
+            table.push(<tr>{children}</tr>)
+        }
+        return table
+    }
+
+
+
+
     render(){
+
         return (
             <div className="corrector">
                 <p>Diese Angabe ist</p>
-                {/*<input type="radio" className="cor_correct">Korrekt</input>
-			<br></br>
-			<p>Falsch, bei diesem Gedicht handelt es sich um </p>
-			<input type="radio" className="cor_alt1">Variabler Versfuß</input>
-			<input type="radio" className="cor_alt1">gehobenes Enjambement</input>
-			<input type="radio" className="cor_alt1">unebetontes Enjambement</input>
-			<input type="radio" className="cor_alt1">lettristische Dekomposition</input>
-			<input type="radio" className="cor_alt1">syntaktische Dekomposition</input>*/}
-                <input type="radio" value="option1" checked={true} />Korrekt <br/>
-                <p> Falsch, es handelt sich um ein(e/en)</p>
-                <input type="radio" value="option1" checked={false} />Variabler Versfuß<br/>
-                <input type="radio" value="option1" checked={false} />gehobenes Enjambement<br/>
-                <input type="radio" value="option1" checked={false} />unbetontes Enjambement<br/>
-                <input type="radio" value="option1" checked={false} />lettristische Dekomposition <br/>
-                <input type="radio" value="option1" checked={false} />syntaktische Dekomposition
-                <button style={{float:"right", margin:"0 0 200px 0"}}>Nächstes Gedicht</button>
+                <form onSubmit={this.handleFormSubmit}>
+                    <div className="form-check">
+                        <label>
+                            <input
+                                type="radio"
+                                name="input_form_radio"
+                                value="option1"
+                                checked={this.state.selectedOption === "option1"}
+                                onChange={this.handleOptionChange}
+                                className="form-radio-input"
+                            />
+                            Korrekt
+                        </label>
+                    </div>
+                    <p>Falsch, es handelt sich um</p>
+                    {this.createRadioTable()}
+                    <div className="form-submit">
+                        <button className="btn form-submit-button" type="submit">
+                            Nächstes Gedicht
+                        </button>
+                    </div>
+                </form>
+
             </div>
         );
     }

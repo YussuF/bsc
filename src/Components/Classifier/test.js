@@ -12,13 +12,11 @@ class Output extends React.Component {
     createConfidenceTable = () => {
         let table = []
 
-        // Outer loop to create parent
         for (var key in this.props.machinedata[0].distribution) {
             let children = []
             children.push(this.props.machinedata[0].distribution[key])
             children.push(' %  ')
             children.push(key)
-            //Create the parent and add the children
             table.push(<tr>{children}</tr>)
         }
         return table

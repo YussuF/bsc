@@ -4,7 +4,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <h3>Classification Correction</h3>
+                <h3>Classification Correction Helper Interface</h3>
 
             </div>
         );
