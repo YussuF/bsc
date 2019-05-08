@@ -21,6 +21,8 @@ Zeitplan BA
 7.5. Restructuring app into components
 8.5. Loading input into states & formatting
 9.5. Fixing states and propagating them through components
+Check til here
+Next todo: de-Hardcode the poem and create some functions in index.js to select a poem and pass its id and title through components
 10.5. Building workflow on site; writing to json outputs
 11.5. 
 12.5. Working flow in main component : classifier
