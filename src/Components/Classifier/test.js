@@ -1,12 +1,13 @@
 import React from "react";
 
+{/*
+    This is the renamed Output.js for reasons unknown. It takes care of the left-hand side of the classifier site, namely the confidence table.
+    The Table is created in createConfidenceTable using data passed as props from the calling classifier.js
+    TODO : Some styling. The problem of getting the values for any poem instead of a hardcoded one should be in the calling classifier.js and not here, but im not sure rn.
+
+*/}
+
 class Output extends React.Component {
-state = {
-    distribution : [],
-    i:0
-}
-
-
 
     createConfidenceTable = () => {
         let table = []
@@ -14,10 +15,6 @@ state = {
         // Outer loop to create parent
         for (var key in this.props.machinedata[0].distribution) {
             let children = []
-            console.log(key);
-            this.state.distribution.push(key)
-            console.log(this.props.machinedata[0].distribution[key]);
-
             children.push(this.props.machinedata[0].distribution[key])
             children.push(' %  ')
             children.push(key)
