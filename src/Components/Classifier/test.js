@@ -1,5 +1,4 @@
 import React from "react";
-import Distributionitem from './distributionitem.js'
 
 class Output extends React.Component {
 state = {
@@ -8,6 +7,25 @@ state = {
 }
 
 
+
+    createConfidenceTable = () => {
+        let table = []
+
+        // Outer loop to create parent
+        for (var key in this.props.machinedata[0].distribution) {
+            let children = []
+            console.log(key);
+            this.state.distribution.push(key)
+            console.log(this.props.machinedata[0].distribution[key]);
+
+            children.push(this.props.machinedata[0].distribution[key])
+            children.push(' %  ')
+            children.push(key)
+            //Create the parent and add the children
+            table.push(<tr>{children}</tr>)
+        }
+        return table
+    }
 
 
     delTodo = (id) => {
@@ -18,45 +36,17 @@ state = {
     }
 
     render(){
-        for (var key in this.props.machinedata[0].distribution) {
-            this.state.distribution.push(key);
-            //this.state.distribution.push(this.props.machinedata[0].distribution[key]);
-        }
-        console.log('---1--------');
-        console.log(...this.props.machinedata);
-        console.log('---2--------');
-        console.log(...this.props.machinedata.map(id =>
-            id.distribution));
-        console.log('----3------');
-        console.log(Object.values(this.props.machinedata[0].distribution).map((propKey) => propKey));
-        console.log(Object.keys(this.props.machinedata[0].distribution))
         return(
 
             <div className="classifier_output">
                 <p>Dieses Gedicht wurde mit <u>{this.props.machinedata[0].Confidence}% Confidence</u> als <b>Parlando</b> klassifiziert.
                     Weitere Konfidenzen </p>
-                <ul>
-                    {this.state.distribution.map((test) => (
-                      <div></div>
-                       //<Distributionitem key={test} />
-
-                    ))
-                       //Object.values(this.props.machinedata[0].distribution);
-                    }
-
-                    {Object.keys(this.props.machinedata[0].distribution).map( (propKey) => {
-                        <Distributionitem key={propKey} />
-                    })}
 
 
+                    <table className="Confidence_table">
+                        {this.createConfidenceTable()}
+                    </table>
 
-
-                    <li> <b>82 %</b> Variabler Versfuß</li>
-                    <li> <b>76 %</b> unebetontes Enjambement</li>
-                    <li> <b>64 %</b> lettristische Dekomposition</li>
-                    <li> <b>63 %</b> gehobenes Enjambement</li>
-
-                </ul>
             </div>
         );
     }

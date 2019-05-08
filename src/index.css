@@ -108,3 +108,7 @@ nav li{
 	position: relative;
 	float: left;
 }
+
+.Confidence_table{
+	padding: 10px;
+}
