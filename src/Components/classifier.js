@@ -12,13 +12,13 @@ import Output from './Classifier/test.js';
 class Classifier extends React.Component {
 
 
-
     render() {
         return(
             <div className="site">
                 <div className="container">
                     <div className="left">
                         <Output machinedata={this.props.machinedata} />
+                        <p>Hello{this.props.greeting}</p>
                     </div>
                     <div className="middle">
                         <Poem textdata={this.props.textdata} />

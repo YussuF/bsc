@@ -37,8 +37,52 @@ class App extends React.Component {
 	state = {
 		textdata : textdata,
 		machinedata : machinedata,
-		categorydata: categorydata
+		categorydata: categorydata,
+		name: '',
+		greeting: '',
+		data: ''
 	}
+
+	componentDidMount() {
+		fetch('/api/greeting?name=42')
+			.then(response => response.json())
+			.then(state => this.setState(state));
+
+		fetch('/api/greeting', {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				firstParam: 'yourValue',
+				secondParam: 'yourOtherValue',
+			})
+		}).then(response => {
+			console.log(response);
+			return response.json();
+		})
+
+		if (fetch('https://my-json-server.typicode.com/yussuf/bsc/posts')
+			.then(response => response.json())
+			.then(data => this.setState({data}))
+		)console.log('success');
+
+		if(fetch('https://my-json-server.typicode.com/yussuf/bsc/posts', {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				firstParam: 'yourValue',
+				secondParam: 'yourOtherValue',
+			})
+		})) console.log('LOL');
+
+
+			}
+
 
 
 
@@ -74,6 +118,7 @@ class App extends React.Component {
 											   machinedata={this.state.machinedata}
 											   categorydata={this.state.categorydata}
 											   textdata={this.state.textdata}
+											   greeting={this.state.greeting}
 						/>
 					}
 				/>

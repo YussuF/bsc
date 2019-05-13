@@ -32,11 +32,24 @@ class Input extends React.Component {
             cat : this.state.selectedOption
         }
         var data = JSON.stringify(output);
-        axios.post(`https://my-json-server.typicode.com/typicode/demo`, { output })
+        axios.post(`/api/greeting/`, { output })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             })
+
+        fetch('/api/greeting/', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                firstParam: 'yourValue',
+                secondParam: 'yourOtherValue',
+                greeting: 'Hi 42!'
+            })
+        })
 
     }
 
