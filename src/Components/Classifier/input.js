@@ -1,4 +1,6 @@
 import React from "react";
+import axios from 'axios';
+
 
 {/*
     Input takes care of the right-hand side of the classifier, namely the form for the user-input. Categories for the form are loaded dynamically from categorymock.json. Poem-class detected by NN is filtered from form.
@@ -20,8 +22,22 @@ class Input extends React.Component {
 
     handleFormSubmit = formSubmitEvent => {
         formSubmitEvent.preventDefault();
+        if (this.state.selectedOption === 'option1') {
+            var output = {
+                cat: 'unchanged'
+            }
+        } else
 
-        console.log('Submitted:', this.state.selectedOption);
+        var output = {
+            cat : this.state.selectedOption
+        }
+        var data = JSON.stringify(output);
+        axios.post(`https://my-json-server.typicode.com/typicode/demo`, { output })
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+
     }
 
 
