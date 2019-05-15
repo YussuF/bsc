@@ -3,7 +3,6 @@ import ReactAudioPlayer from "react-audio-player";
 
 {/*
     poem takes care of the middle part of the classifier site, namely the poem text itself. Lines of the poem come from datamock.json.
-    TODO: Poem title is hardcoded so far, the poem lines are loaded dynamically, but the name of the poem is hardcoded.
 */}
 
 
@@ -14,9 +13,9 @@ class Poem extends React.Component {
 
     createPoemTable = () => {
         let table = []
-        for (var key in this.props.textdata["teils-teils"].lines) {
+        for (var key in this.props.textdata[this.props.poem_title].lines) {
             let children = []
-            children.push(this.props.textdata["teils-teils"].lines[key].line)
+            children.push(this.props.textdata[this.props.poem_title].lines[key].line)
             table.push(<tr key={key}>{children}</tr>)
         }
         return table
@@ -25,7 +24,6 @@ class Poem extends React.Component {
 
 
     render(){
-        console.log(this.props.textdata["teils-teils"].lines[0].line)
         return (
             <div className="poem-wrap">
                 <div className="poem">

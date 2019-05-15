@@ -182,7 +182,6 @@ function findpoem_confidence(){
 	current_class = machinedata[tmp_i]["class"];
 	current_textdata = textdata[res];
 	current_lines = current_textdata["lines"];
-	console.log(current_lines[0]["line"]);
 	return (tmp, res);
 }
 

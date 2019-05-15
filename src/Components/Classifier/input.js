@@ -59,9 +59,8 @@ class Input extends React.Component {
         let table = []
         for (var key in this.props.categorydata) {
             var i = 1;
-            let children = []
-            {/*TODO: Hardcoded 0 is the first poem in machinemock, should be found via machinedata[i].id === id of the current poem*/}
-            if (this.props.categorydata[key] === this.props.machinedata[0].class)children.push('');
+            let children = [];
+            if (this.props.categorydata[key] === this.props.machinedata[this.props.poem_id].class)children.push('');
             else children.push(<div key={key} className="form-check">
                 <label>
                     <input
