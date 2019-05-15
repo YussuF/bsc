@@ -17,7 +17,7 @@ class Poem extends React.Component {
         for (var key in this.props.textdata["teils-teils"].lines) {
             let children = []
             children.push(this.props.textdata["teils-teils"].lines[key].line)
-            table.push(<tr>{children}</tr>)
+            table.push(<tr key={key}>{children}</tr>)
         }
         return table
     }
@@ -31,7 +31,9 @@ class Poem extends React.Component {
                 <div className="poem">
                     <h3>Teils-Teils</h3>
                     <table className="Poem_table">
-                        {this.createPoemTable()}
+                        <tbody>
+                            {this.createPoemTable()}
+                        </tbody>
                     </table>
                 </div>
                 <ReactAudioPlayer

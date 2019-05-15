@@ -3,14 +3,29 @@ const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
 const path = require('path');
 const port = 3001;
+const morgan = require('morgan')
+var http = require('http');
 
+const app = express()
+app.use(morgan('tiny'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(require('./routes/index.routes'))
+{/*
 const app = express();
 app.use(pino);
-app .use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json
-
+*/}
 var fs = require('fs'); /* Put it where other modules included */
 let greeting = [];
+
+
+
+
+
+
+
 
 
 
@@ -23,17 +38,20 @@ app.get('/api/greeting', (req, res) => {
 
 });
 
+
+
+
 app.post('/api/greeting', (req, res) => {
-    const newentry = {
-        bla: req.body.d
-    }
-    greeting.push(newentry);
     console.log('receiving data ...');
     console.log('body is ',req.body);
-    console.log(JSON.stringify(newentry));
-    res.send(JSON.stringify(newentry));
+    console.log(JSON.stringify(req.body));
+    res.send(req.body);
 })
 
+// First route
+app.get('/', (req, res) => {
+    res.json({ message: 'Hello world' })
+})
 
 
 app.listen(3001, () =>

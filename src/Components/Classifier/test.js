@@ -13,11 +13,9 @@ class Output extends React.Component {
         let table = []
         // TODO: Hardcoded 0 for first poem, needs to be eval'd by machinedata[i].id === id of the current poem ; again 2 lines later
         for (var key in this.props.machinedata[0].distribution) {
-            let children = []
-            children.push(this.props.machinedata[0].distribution[key])
-            children.push(' %  ')
-            children.push(key)
-            table.push(<tr>{children}</tr>)
+            let children = [];
+            children.push(this.props.machinedata[0].distribution[key] + ' %  ' + key);
+            table.push(<tr key={this.props.machinedata[0].distribution[key]}>{children}</tr>);
         }
         return table
     }
@@ -40,7 +38,9 @@ class Output extends React.Component {
 
 
                     <table className="Confidence_table">
-                        {this.createConfidenceTable()}
+                        <tbody>
+                            {this.createConfidenceTable()}
+                        </tbody>
                     </table>
 
             </div>

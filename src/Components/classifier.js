@@ -12,6 +12,12 @@ import Output from './Classifier/test.js';
 class Classifier extends React.Component {
 
 
+    findPoem = () => {
+        console.log(this.props.machinedata);
+        return
+    }
+
+
     render() {
         return(
             <div className="site">

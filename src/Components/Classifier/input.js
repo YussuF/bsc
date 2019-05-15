@@ -37,7 +37,7 @@ class Input extends React.Component {
                 console.log(res);
                 console.log(res.data);
             })
-
+        {/*
         fetch('/api/greeting/', {
             method: 'POST',
             headers: {
@@ -50,6 +50,7 @@ class Input extends React.Component {
                 greeting: 'Hi 42!'
             })
         })
+        */}
 
     }
 
@@ -57,10 +58,11 @@ class Input extends React.Component {
     createRadioTable = () => {
         let table = []
         for (var key in this.props.categorydata) {
+            var i = 1;
             let children = []
             {/*TODO: Hardcoded 0 is the first poem in machinemock, should be found via machinedata[i].id === id of the current poem*/}
             if (this.props.categorydata[key] === this.props.machinedata[0].class)children.push('');
-            else children.push(<div className="form-check">
+            else children.push(<div key={key} className="form-check">
                 <label>
                     <input
                         type="radio"
@@ -73,7 +75,8 @@ class Input extends React.Component {
                     {this.props.categorydata[key]}
                 </label>
             </div>)
-            table.push(<tr>{children}</tr>)
+            table.push(<div key={key}>{children}</div>)
+            i = i+1;
         }
         return table
     }

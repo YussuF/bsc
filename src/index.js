@@ -44,10 +44,15 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch('/api/greeting?name=42')
+
+
+
+
+
+		fetch('/api/greeting')
 			.then(response => response.json())
 			.then(state => this.setState(state));
-
+		{/*
 		fetch('/api/greeting', {
 			method: 'POST',
 			headers: {
@@ -68,7 +73,7 @@ class App extends React.Component {
 			.then(data => this.setState({data}))
 		)console.log('success');
 
-		if(fetch('https://my-json-server.typicode.com/yussuf/bsc/posts', {
+		if(fetch('/api/greeting', {
 			method: 'POST',
 			headers: {
 				'Accept': 'application/json',
@@ -79,7 +84,7 @@ class App extends React.Component {
 				secondParam: 'yourOtherValue',
 			})
 		})) console.log('LOL');
-
+*/}
 
 			}
 
