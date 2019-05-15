@@ -127,7 +127,17 @@ class App extends React.Component {
 						/>
 					}
 				/>
-				<Route path="/categories/" component={Categories} />
+				<Route
+					path="/categories/"
+					render={
+						(props) => <Categories {...props}
+											   machinedata={this.state.machinedata}
+											   categorydata={this.state.categorydata}
+											   textdata={this.state.textdata}
+											   greeting={this.state.greeting}
+						/>
+					}
+				/>
 			</div>
 		</Router>
 	);
