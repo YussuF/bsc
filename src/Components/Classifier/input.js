@@ -24,12 +24,14 @@ class Input extends React.Component {
         formSubmitEvent.preventDefault();
         if (this.state.selectedOption === 'option1') {
             var output = {
-                cat: 'unchanged'
+                cat: 'unchanged',
+                poem_id: this.props.poem_id,
             }
         } else
 
         var output = {
-            cat : this.state.selectedOption
+            cat : this.state.selectedOption,
+            poem_id: this.props.poem_id,
         }
         var data = JSON.stringify(output);
         axios.post(`/api/greeting/`, { output })

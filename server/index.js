@@ -46,10 +46,13 @@ app.post('/api/greeting', (req, res) => {
     console.log('body is ',req.body);
     console.log(JSON.stringify(req.body));
     res.send(req.body);
-    fs.writeFile('output2.json', JSON.stringify(req.body), (err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-    });
+
+    fs.readFile('output3.json', function (err, data) {
+        var json = JSON.parse(data);
+        json.push(req.body);
+
+        fs.writeFile("output3.json", JSON.stringify(json))
+    })
 })
 
 // First route
