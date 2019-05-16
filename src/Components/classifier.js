@@ -3,9 +3,9 @@ import Poem from './Classifier/poem.js';
 import Input from './Classifier/input.js';
 import Output from './Classifier/test.js';
 
-{/*
-    Classifier is the Wrapper for the classifier site, loading all jsons needed. Possibly this has to be moved to index.js once the poem is rendered dynamically and not hardcoded.
-*/}
+
+//Classifier is the Wrapper for the classifier site, loading all jsons needed. Possibly this has to be moved to index.js once the poem is rendered dynamically and not hardcoded.
+
 
 
 
@@ -16,18 +16,26 @@ state ={
 }
 
     findPoem = () => {
-        console.log(this.props.machinedata);
         var temp = 0;
         var res = 0;
         for (var key in this.props.machinedata) {
-            console.log(parseInt(this.props.machinedata[key].Confidence) );
-            console.log(temp);
-            if(parseInt(this.props.machinedata[key].Confidence) > temp) {
-                temp = parseInt(this.props.machinedata[key].Confidence);
-                res = key;
+            for(var k in this.props.correctiondata){
+                console.log(this.props.correctiondata[k].output);
+                console.log(temp);
+                console.log(parseInt(this.props.machinedata[key].Confidence) > temp);
+                if(this.props.correctiondata[k].output.poem_id === this.props.machinedata[key]){
+                    console.log('once');
+                }
+                else
+                if(parseInt(this.props.machinedata[key].Confidence) > temp) {
+                    console.log('yay');
+                    console.log(key);
+                    temp = parseInt(this.props.machinedata[key].Confidence);
+                    res = key;
+                }
             }
-        }
 
+        }
         console.log(res);
         return res;
     }

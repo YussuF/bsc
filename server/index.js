@@ -47,11 +47,12 @@ app.post('/api/greeting', (req, res) => {
     console.log(JSON.stringify(req.body));
     res.send(req.body);
 
-    fs.readFileSync('output3.json', function (err, data) {
+    fs.readFile('./src/output2.json', function (err, data) {
         var json = JSON.parse(data);
         json.push(req.body);
-
-        fs.writeFileSync("output3.json", JSON.stringify(json))
+        fs.writeFile("./src/output2.json", JSON.stringify(json), (err) => {
+            if (err) throw err;
+        })
     })
 })
 

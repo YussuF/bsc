@@ -1,18 +1,15 @@
 import React from "react";
 import axios from 'axios';
+axios.defaults.port = 3001;
 
 
-{/*
-    Input takes care of the right-hand side of the classifier, namely the form for the user-input. Categories for the form are loaded dynamically from categorymock.json. Poem-class detected by NN is filtered from form.
-    TODO: Form Submit needs to save to json.
+//Input takes care of the right-hand side of the classifier, namely the form for the user-input. Categories for the form are loaded dynamically from categorymock.json. Poem-class detected by NN is filtered from form.
 
-*/}
 class Input extends React.Component {
 
     state = {
         selectedOption: "option1",
     }
-
 
     handleOptionChange = changeEvent => {
         this.setState({
@@ -22,38 +19,23 @@ class Input extends React.Component {
 
     handleFormSubmit = formSubmitEvent => {
         formSubmitEvent.preventDefault();
+        var output = {};
         if (this.state.selectedOption === 'option1') {
-            var output = {
+            output = {
                 cat: 'unchanged',
                 poem_id: this.props.poem_id,
             }
         } else
 
-        var output = {
-            cat : this.state.selectedOption,
+        output = {
+            cat: this.state.selectedOption,
             poem_id: this.props.poem_id,
         }
-        var data = JSON.stringify(output);
         axios.post(`/api/greeting/`, { output })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             })
-        {/*
-        fetch('/api/greeting/', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                firstParam: 'yourValue',
-                secondParam: 'yourOtherValue',
-                greeting: 'Hi 42!'
-            })
-        })
-        */}
-
     }
 
 

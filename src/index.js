@@ -10,24 +10,14 @@ import Home from './Components/home.js';
 import Header from './Components/Layout/header.js';
 import Categories from './Components/categories.js';
 
-{/*
-	Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
-*/}
 
-
+//Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
 
 
 let textdata = require('./datamock.json');
 let machinedata = require('./machinemock.json');
 let categorydata = require('./categorymock.json');
-
-var current_poem = "0";
-var current_confidence = 0;
-var current_distribution = [];
-var current_class = "";
-var current_textdata = [];
-var current_lines = [];
-
+let correctiondata = require('./output2.json');
 
 class App extends React.Component {
 
@@ -38,6 +28,7 @@ class App extends React.Component {
 		textdata : textdata,
 		machinedata : machinedata,
 		categorydata: categorydata,
+		correctiondata : correctiondata,
 		name: '',
 		greeting: '',
 		data: ''
@@ -52,40 +43,6 @@ class App extends React.Component {
 		fetch('/api/greeting')
 			.then(response => response.json())
 			.then(state => this.setState(state));
-		{/*
-		fetch('/api/greeting', {
-			method: 'POST',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				firstParam: 'yourValue',
-				secondParam: 'yourOtherValue',
-			})
-		}).then(response => {
-			console.log(response);
-			return response.json();
-		})
-
-		if (fetch('https://my-json-server.typicode.com/yussuf/bsc/posts')
-			.then(response => response.json())
-			.then(data => this.setState({data}))
-		)console.log('success');
-
-		if(fetch('/api/greeting', {
-			method: 'POST',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				firstParam: 'yourValue',
-				secondParam: 'yourOtherValue',
-			})
-		})) console.log('LOL');
-*/}
-
 			}
 
 
@@ -124,6 +81,7 @@ class App extends React.Component {
 											   categorydata={this.state.categorydata}
 											   textdata={this.state.textdata}
 											   greeting={this.state.greeting}
+											   correctiondata={this.state.correctiondata}
 						/>
 					}
 				/>
@@ -145,58 +103,6 @@ class App extends React.Component {
 
 
 }
-
-
-function Index() {
-	// test for JSON Availability
-	tryRequire('./datamock.json') ? console.log("all fine") : alert('JSON not found');
-	tryRequire('./machinemock.json') ? console.log("all fine") : alert('JSON not found');
- 	//console.log("Findpoem:");
- 	//console.log(findpoem_confidence());
-	//console.log("-------");
-	//console.log(Object.keys(machinedata).length);
-
-  return (
-  	<p className="hello">Hello World!</p>
-  	);
-}
-
-function loadingjson(){
-	//console.log(this.state);
-}
-
-
-// Helper function for Availability testing
-const tryRequire = (path) => {
-  try {
-   return require(`${path}`);
-  } catch (err) {
-   return null;
-  }
-};
-
-// Finding Poems by c
-function findpoem_confidence(){
-	var tmp = 0;
-	var res = 0;
-	var tmp_i = 0;
-	for (var i = Object.keys(machinedata).length - 1; i >= 0; i--) {
-		if (machinedata[i]["Confidence"] > tmp) {
-			tmp = machinedata[i]["Confidence"];
-			res = machinedata[i]["id"];
-			tmp_i = i;
-		}
-	}
-	current_confidence = machinedata[tmp_i]["Confidence"];
-	current_distribution = machinedata[tmp_i]["distribution"];
-	current_class = machinedata[tmp_i]["class"];
-	current_textdata = textdata[res];
-	current_lines = current_textdata["lines"];
-	return (tmp, res);
-}
-
-
-
 
 export default App;
 

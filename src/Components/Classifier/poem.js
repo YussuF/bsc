@@ -1,9 +1,9 @@
 import React from "react";
 import ReactAudioPlayer from "react-audio-player";
 
-{/*
-    poem takes care of the middle part of the classifier site, namely the poem text itself. Lines of the poem come from datamock.json.
-*/}
+
+//poem takes care of the middle part of the classifier site, namely the poem text itself. Lines of the poem come from datamock.json.
+
 
 
 class Poem extends React.Component {
