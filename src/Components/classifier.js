@@ -11,14 +11,16 @@ import Output from './Classifier/test.js';
 
 class Classifier extends React.Component {
 state ={
-    poem_id: 0,
+    poem_id: 1,
     poem_title: '',
 }
 
     findPoem = () => {
+    console.log('findpoem start');
         var temp = 0;
         var res = 42;
         for (var key in this.props.machinedata) {
+
             if(this.isEmpty(this.props.correctiondata)){
                 if (parseInt(this.props.machinedata[key].Confidence) > temp) {
 
@@ -28,22 +30,23 @@ state ={
             }
             else {
                 for (var k in this.props.correctiondata) {
-                    console.log('yay');
                     if (parseInt(this.props.correctiondata[k].output.poem_id) === parseInt(key)) {
-                        console.log('LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL');
+                            console.log('should appear twice');
+                            console.log(k);
+                            console.log('poem id vs key');
+                            console.log(parseInt(this.props.correctiondata[k].output.poem_id));
+                            console.log(parseInt(key));
                     } else if (parseInt(this.props.machinedata[key].Confidence) > temp) {
-
-                        temp = parseInt(this.props.machinedata[key].Confidence);
+                            console.log('Yeah, once, with a 1');
+                            console.log(k);
+                        temp = parseInt(this.props.machinedata[k].Confidence);
                         res = key;
                     }
                 }
             }
 
         }
-        console.log(res);
-
-        this.setState({poem_id: res})
-        this.setState({poem_title : 'Yay'});
+        console.log('findpoem end');
         return res;
     }
 
@@ -51,11 +54,15 @@ state ={
 
     }
 
+    //  this.props.machinedata[this.state.poem_id].id
+
     componentWillMount() {
-        this.findPoem();
-        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
+        this.setState({poem_id: parseInt(this.findPoem())}, () => this.setState({poem_title : this.props.machinedata[this.state.poem_id].id}));
+        console.log('findpoem output')
         console.log(this.props.machinedata[this.state.poem_id].id);
-        console.log('teils-teils');
+        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
+        console.log(this.state.poem_id);
+        console.log(this.state.poem_title);
     }
 
 

@@ -31,6 +31,7 @@ class Input extends React.Component {
             cat: this.state.selectedOption,
             poem_id: this.props.poem_id,
         }
+
         axios.post(`/api/greeting/`, { output })
             .then(res => {
                 console.log(res);

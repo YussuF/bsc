@@ -36,13 +36,6 @@ class App extends React.Component {
 
 	componentDidMount() {
 
-
-
-
-
-		fetch('/api/greeting')
-			.then(response => response.json())
-			.then(state => this.setState(state));
 			}
 
 
