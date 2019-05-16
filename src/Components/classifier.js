@@ -11,7 +11,7 @@ import Output from './Classifier/test.js';
 
 class Classifier extends React.Component {
 state ={
-    poem_id: 42,
+    poem_id: 0,
     poem_title: '',
 }
 
@@ -42,7 +42,20 @@ state ={
         }
         console.log(res);
 
+        this.setState({poem_id: res})
+        this.setState({poem_title : 'Yay'});
         return res;
+    }
+
+    componentDidMount() {
+
+    }
+
+    componentWillMount() {
+        this.findPoem();
+        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
+        console.log(this.props.machinedata[this.state.poem_id].id);
+        console.log('teils-teils');
     }
 
 
@@ -57,8 +70,6 @@ state ={
 
 
     render() {
-        {this.state.poem_id = this.findPoem()}
-        {this.state.poem_title = this.props.machinedata[this.state.poem_id].id}
         return(
             <div className="site">
                 <div className="container">
