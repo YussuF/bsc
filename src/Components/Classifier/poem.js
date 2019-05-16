@@ -27,7 +27,7 @@ class Poem extends React.Component {
         return (
             <div className="poem-wrap">
                 <div className="poem">
-                    <h3>Teils-Teils</h3>
+                    <h3>{this.props.poem_title}</h3>
                     <table className="Poem_table">
                         <tbody>
                             {this.createPoemTable()}

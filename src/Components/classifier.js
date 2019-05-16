@@ -17,28 +17,43 @@ state ={
 
     findPoem = () => {
         var temp = 0;
-        var res = 0;
+        var res = 42;
         for (var key in this.props.machinedata) {
-            for(var k in this.props.correctiondata){
-                console.log(this.props.correctiondata[k].output);
-                console.log(temp);
-                console.log(parseInt(this.props.machinedata[key].Confidence) > temp);
-                if(this.props.correctiondata[k].output.poem_id === this.props.machinedata[key]){
-                    console.log('once');
-                }
-                else
-                if(parseInt(this.props.machinedata[key].Confidence) > temp) {
-                    console.log('yay');
-                    console.log(key);
+            if(this.isEmpty(this.props.correctiondata)){
+                if (parseInt(this.props.machinedata[key].Confidence) > temp) {
+
                     temp = parseInt(this.props.machinedata[key].Confidence);
                     res = key;
+                }
+            }
+            else {
+                for (var k in this.props.correctiondata) {
+                    console.log('yay');
+                    if (parseInt(this.props.correctiondata[k].output.poem_id) === parseInt(key)) {
+                        console.log('LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL');
+                    } else if (parseInt(this.props.machinedata[key].Confidence) > temp) {
+
+                        temp = parseInt(this.props.machinedata[key].Confidence);
+                        res = key;
+                    }
                 }
             }
 
         }
         console.log(res);
+
         return res;
     }
+
+
+    isEmpty(obj) {
+        for(var key in obj) {
+            if(obj.hasOwnProperty(key))
+                return false;
+        }
+        return true;
+    }
+
 
 
     render() {
