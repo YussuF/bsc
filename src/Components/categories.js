@@ -1,5 +1,6 @@
 import React from 'react';
 /*jshint loopfunc:true */
+import Change_button from './Categories/Change_button.js';
 export default class Categories extends React.Component {
 
     createCategoryTable = () => {
@@ -31,7 +32,10 @@ export default class Categories extends React.Component {
                 else
                     children.push(<td key={key}> Uncorrected</td>);
                 console.log(key);
-            children.push(<td> <button key={key} onClick={() => {this.props.callbackfromParent(key)}}>Change</button></td>)
+            children.push(<td> <Change_button
+                onHeaderClick={this.handleClick()}
+                value={key}
+                column={key}  /></td>)
 
             table.push(<tr key={key}>{children}</tr>);
         }
@@ -40,7 +44,7 @@ export default class Categories extends React.Component {
 
     handleClick(e) {
 
-        console.log('clicked');
+        console.log(e);
     }
 
 
