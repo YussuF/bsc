@@ -15,8 +15,11 @@ class Classifier extends React.Component {
     constructor(props) {
         super(props);
         // Don't call this.setState() here!
-        this.state = {  poem_id: 0,
-            poem_title: 'teils-teils', };
+        this.state = {
+            poem_id: 0,
+            poem_title: 'teils-teils',
+            poems_available: true,
+        };
     }
 
 
@@ -44,6 +47,13 @@ class Classifier extends React.Component {
             corrected_ids
         );
 
+        if (this.isEmpty(uncorrected_ids)){
+            this.setState({
+                poems_available: false,
+            })
+        }
+
+
         for(var i in uncorrected_ids){
             if (parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence) > temp) {
                 temp = parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence);
@@ -59,8 +69,8 @@ class Classifier extends React.Component {
 
     componentDidMount() {
         this.setState({poem_id: parseInt(this.findPoem())}, () => this.setState({poem_title : this.props.machinedata[this.state.poem_id].id}));
-        //console.log(this.props.machinedata[this.state.poem_id].id);
         this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
+        //if(this.state.poems_available)alert('All Poems corrected');
     }
 
 

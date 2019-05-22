@@ -86,6 +86,7 @@ class App extends React.Component {
 											   categorydata={this.state.categorydata}
 											   textdata={this.state.textdata}
 											   greeting={this.state.greeting}
+											   correctiondata={this.state.correctiondata}
 						/>
 					}
 				/>
