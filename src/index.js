@@ -10,7 +10,6 @@ import Home from './Components/home.js';
 import Header from './Components/Layout/header.js';
 import Categories from './Components/categories.js';
 
-
 //Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
 
 
@@ -34,15 +33,11 @@ class App extends React.Component {
 		data: ''
 	}
 
-	componentDidMount() {
 
-			}
-
-
-
-
-
-
+	myCallback = (dataFromChild) => {
+		console.log('Hello');
+		console.log(dataFromChild);
+	}
 
 	render() {
 
@@ -87,6 +82,7 @@ class App extends React.Component {
 											   textdata={this.state.textdata}
 											   greeting={this.state.greeting}
 											   correctiondata={this.state.correctiondata}
+											   callbackfromParent={this.myCallback}
 						/>
 					}
 				/>

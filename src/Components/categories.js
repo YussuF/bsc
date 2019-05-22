@@ -1,5 +1,5 @@
 import React from 'react';
-
+/*jshint loopfunc:true */
 export default class Categories extends React.Component {
 
     createCategoryTable = () => {
@@ -26,16 +26,28 @@ export default class Categories extends React.Component {
                 children.push(<td key={this.props.machinedata[key].class}> {this.props.machinedata[key].class} </td>);
                 children.push(<td key={this.props.machinedata[key].Confidence}> {this.props.machinedata[key].Confidence} </td>);
                 if(!(temp === "boing")) {
-                    console.log(temp);
                     children.push(<td key={this.props.correctiondata[temp].output.poem_id}> {this.props.correctiondata[temp].output.cat}</td>);
                 }
                 else
                     children.push(<td key={key}> Uncorrected</td>);
+                console.log(key);
+            children.push(<td> <button key={key} onClick={() => {this.props.callbackfromParent(key)}}>Change</button></td>)
+
             table.push(<tr key={key}>{children}</tr>);
         }
         return table
     }
 
+    handleClick(e) {
+
+        console.log('clicked');
+    }
+
+
+
+    _handleClick = (id) => {
+        this.props.callbackfromParent(id);
+    }
 
 
     createCategoryOverview = () => {
