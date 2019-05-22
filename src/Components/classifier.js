@@ -15,37 +15,63 @@ state ={
     poem_title: '',
 }
 
+    findcorrectedpoems = () =>{
+        var corrected_ids = [];
+        for (var k in this.props.correctiondata){
+            corrected_ids.push(parseInt(this.props.correctiondata[k].output.poem_id));
+        }
+        var loaded_ids = [];
+        for (var key2 in this.props.machinedata){
+            loaded_ids.push(parseInt(key2));
+        }
+        var filtered = loaded_ids.filter(
+            function(e) {
+                return this.indexOf(e) < 0;
+            },
+            corrected_ids
+        );
+        console.log(filtered);
+
+
+        console.log('findcorrected end');
+    }
+
+
+
     findPoem = () => {
     console.log('findpoem start');
         var temp = 0;
-        var res = 42;
-        for (var key in this.props.machinedata) {
-
-            if(this.isEmpty(this.props.correctiondata)){
-                if (parseInt(this.props.machinedata[key].Confidence) > temp) {
-
-                    temp = parseInt(this.props.machinedata[key].Confidence);
-                    res = key;
-                }
-            }
-            else {
-                for (var k in this.props.correctiondata) {
-                    if (parseInt(this.props.correctiondata[k].output.poem_id) === parseInt(key)) {
-                            console.log('should appear twice');
-                            console.log(k);
-                            console.log('poem id vs key');
-                            console.log(parseInt(this.props.correctiondata[k].output.poem_id));
-                            console.log(parseInt(key));
-                    } else if (parseInt(this.props.machinedata[key].Confidence) > temp) {
-                            console.log('Yeah, once, with a 1');
-                            console.log(k);
-                        temp = parseInt(this.props.machinedata[k].Confidence);
-                        res = key;
-                    }
-                }
-            }
-
+        var res = 0;
+        var corrected_ids = [];
+        for (var k in this.props.correctiondata){
+            corrected_ids.push(parseInt(this.props.correctiondata[k].output.poem_id));
         }
+
+        var loaded_ids = [];
+        for (var key2 in this.props.machinedata){
+            loaded_ids.push(parseInt(key2));
+        }
+
+        var uncorrected_ids = loaded_ids.filter(
+            function(e) {
+                return this.indexOf(e) < 0;
+            },
+            corrected_ids
+        );
+
+        console.log(uncorrected_ids);
+
+        for(var i in uncorrected_ids){
+            if (parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence) > temp) {
+                console.log('Yeah, once, with a 1');
+                console.log(uncorrected_ids[i]);
+                temp = parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence);
+                res = i;
+            }
+        }
+
+
+
         console.log('findpoem end');
         return res;
     }
