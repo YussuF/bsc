@@ -24,7 +24,6 @@ class Output extends React.Component {
         return(
 
             <div className="classifier_output">
-                {/*TODO: Hardcoded 0 */}
                 <p>Dieses Gedicht wurde mit <u>{this.props.machinedata[this.props.poem_id].Confidence}% Confidence</u> als <b>Parlando</b> klassifiziert.
                     Weitere Konfidenzen </p>
 

@@ -1,14 +1,41 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 /*jshint loopfunc:true */
 import ChangeButton from './Categories/change_button.js';
+
+
 export default class Categories extends React.Component {
+    state = {
+        redirect: false,
+    }
+
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this)
+    }
+
 
 
     handleClick(e) {
-        console.log('yo');
-        console.log(e);
+
+
+        this.setState({redirect: true});
+
+        //this.props.onPoemSelection(e);
     }
 
+
+    setRedirect() {
+        this.setState({
+            redirect: true
+        });
+    }
+
+    renderRedirect() {
+        if (this.state.redirect) {
+            return <Redirect to='/classifier' />
+        }
+    }
 
 
     createCategoryTable = () => {
@@ -84,6 +111,7 @@ export default class Categories extends React.Component {
                 <table>
                 {this.createCategoryTable()}
                 </table>
+                {this.renderRedirect()}
             </div>
         );
     }

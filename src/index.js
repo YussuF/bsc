@@ -34,6 +34,11 @@ class App extends React.Component {
 	}
 
 
+	onPoemSelection(e){
+	console.log('yo');
+	}
+
+
 	myCallback = (dataFromChild) => {
 		console.log('Hello');
 		console.log(dataFromChild);
@@ -83,6 +88,7 @@ class App extends React.Component {
 											   greeting={this.state.greeting}
 											   correctiondata={this.state.correctiondata}
 											   callbackfromParent={this.myCallback}
+											   onPoemSelection={this.onPoemSelection}
 						/>
 					}
 				/>
