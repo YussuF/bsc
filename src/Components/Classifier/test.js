@@ -20,13 +20,6 @@ class Output extends React.Component {
     }
 
 
-    delTodo = (id) => {
-
-//            { todos: [...this.state.todos.filter(todo => todo.id !== id)] }
-        //return this.props.todos.map((todo) => (
-        // <TodoItem key={todo.id} todo={todo} markComplete={this.props.markComplete} delTodo={this.props.delTodo} />
-    }
-
     render(){
         return(
 

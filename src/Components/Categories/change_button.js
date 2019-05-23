@@ -1,15 +1,31 @@
 import React from 'react';
 
-export default class change_button extends React.Component {
-    handleClick = () => {
-        this.props.onHeaderClick(this.props.value);
+export default class ChangeButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state={
+
+        }
     }
+
+    componentDidMount() {
+        console.log(this.props)
+    }
+
+    onClick = () => {
+    this.props.onClick(this.props.value);
+    }
+
+    onFlick(e){
+        this.props.onClick(e);
+    }
+
 
     render() {
         return (
-            <td onClick={this.handleClick}>
-                {this.props.column} Test
-            </td>
+            <button onClick={() => this.onFlick(this.props.value)}>
+                {this.props.value} Test
+            </button>
         );
     }
 }

@@ -1,7 +1,15 @@
 import React from 'react';
 /*jshint loopfunc:true */
-import Change_button from './Categories/Change_button.js';
+import ChangeButton from './Categories/change_button.js';
 export default class Categories extends React.Component {
+
+
+    handleClick(e) {
+        console.log('yo');
+        console.log(e);
+    }
+
+
 
     createCategoryTable = () => {
         let table = [];
@@ -32,26 +40,16 @@ export default class Categories extends React.Component {
                 else
                     children.push(<td key={key}> Uncorrected</td>);
                 console.log(key);
-            children.push(<td> <Change_button
-                onHeaderClick={this.handleClick()}
-                value={key}
-                column={key}  /></td>)
+            children.push(<ChangeButton
+                onClick={this.handleClick}
+                value={key}/>);
 
             table.push(<tr key={key}>{children}</tr>);
         }
         return table
     }
 
-    handleClick(e) {
 
-        console.log(e);
-    }
-
-
-
-    _handleClick = (id) => {
-        this.props.callbackfromParent(id);
-    }
 
 
     createCategoryOverview = () => {
