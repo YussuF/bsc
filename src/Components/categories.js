@@ -49,11 +49,13 @@ export default class Categories extends React.Component {
         table.push(header);
 
         for (var key in this.props.machinedata) {
+            var temp = 'boing';
                 for (var i in this.props.correctiondata){
                     if(parseInt(this.props.correctiondata[i].output.poem_id) === parseInt(key)) {
-                        var temp = i;
+                        console.log('yo, corr');
+                        temp = i;
                     }
-                    else temp = "boing";
+
                 }
 
 
