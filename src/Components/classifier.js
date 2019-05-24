@@ -54,6 +54,7 @@ class Classifier extends React.Component {
         }
 
 
+
         for(var i in uncorrected_ids){
             if (parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence) > temp) {
                 temp = parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence);
@@ -70,7 +71,7 @@ class Classifier extends React.Component {
     componentDidMount() {
         this.setState({poem_id: parseInt(this.findPoem())}, () => this.setState({poem_title : this.props.machinedata[this.state.poem_id].id}));
         this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
-        //if(this.state.poems_available)alert('All Poems corrected');
+        if(this.state.poems_available)alert('All Poems corrected');
     }
 
 

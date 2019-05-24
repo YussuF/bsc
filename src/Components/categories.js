@@ -7,6 +7,7 @@ import ChangeButton from './Categories/change_button.js';
 export default class Categories extends React.Component {
     state = {
         redirect: false,
+        poem_id: 42,
     }
 
     constructor(props) {
@@ -18,8 +19,13 @@ export default class Categories extends React.Component {
 
     handleClick(e) {
 
-
-        this.setState({redirect: true});
+        //this.setState({poem_id: e});
+        this.setState({
+            poem_id: e
+        }, () => {
+            this.setState({redirect:true});
+        });
+        //this.setState({redirect: true});
 
         //this.props.onPoemSelection(e);
     }
@@ -33,9 +39,16 @@ export default class Categories extends React.Component {
 
     renderRedirect() {
         if (this.state.redirect) {
-            return <Redirect to='/classifier' />
+            return <Redirect to={{
+                pathname: '/classifier',
+                search: '?lol',
+                state: {poem_id2: this.props.poem_id}
+            }}/>
         }
     }
+
+
+
 
 
     createCategoryTable = () => {
