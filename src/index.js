@@ -37,12 +37,11 @@ class App extends React.Component {
 
 
 	onPoemSelection(e){
-	console.log('yo');
+
 	}
 
 	addCategory(e){
-		console.log('index says hi');
-		console.log(e);
+
 		axios.post(`/api/category/`, { e })
 			.then(res => {
 				console.log(res);
@@ -52,8 +51,11 @@ class App extends React.Component {
 
 
 	myCallback = (dataFromChild) => {
-		console.log('Hello');
+
 		console.log(dataFromChild);
+	}
+
+	componentDidMount() {
 	}
 
 	render() {
