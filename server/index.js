@@ -40,6 +40,26 @@ app.get('/api/greeting', (req, res) => {
 
 
 
+app.post('/api/category', (req, res) => {
+    console.log('receiving data ...');
+    console.log('body is ',req.body);
+    console.log(JSON.stringify(req.body));
+    res.send(req.body);
+    fs.readFile('./src/categorymock.json', function (err, data) {
+        var json = JSON.parse(data);
+        var count = Object.keys(json).length + 1;
+        var json2 = JSON.stringify(json).substring(0,JSON.stringify(json).length-1 );
+        var newCat = ',"Cat' + count + '": "' + req.body.e + '"}';
+        console.log(newCat);
+        var final = json2.concat(newCat);
+        console.log(final);
+        fs.writeFile("./src/categorymock.json",final, (err) => {
+            if (err) throw err;
+        })
+    })
+})
+
+
 
 app.post('/api/greeting', (req, res) => {
     console.log('receiving data ...');

@@ -8,17 +8,19 @@ export default class Categories extends React.Component {
     state = {
         redirect: false,
         poem_id: 42,
+        value: '',
     }
 
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this)
+        this.handleClick = this.handleClick.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
 
     handleClick(e) {
 
-        //this.setState({poem_id: e});
         this.setState({
             poem_id: e
         }, () => {
@@ -27,6 +29,16 @@ export default class Categories extends React.Component {
         //this.setState({redirect: true});
 
         //this.props.onPoemSelection(e);
+    }
+
+    handleChange(e){
+        this.setState({value: e.target.value});
+    }
+
+    handleSubmit(e){
+        console.log(this.state.value);
+        e.preventDefault();
+        this.props.onCategoryAdd(this.state.value);
     }
 
 
@@ -47,7 +59,14 @@ export default class Categories extends React.Component {
     }
 
 
-
+    addCategory(e){
+        this.setState({
+            value: e
+        }, () => {
+            console.log(this.state.value);
+        });
+        console.log(this.state.value);
+    }
 
 
     createCategoryTable = () => {
@@ -64,7 +83,7 @@ export default class Categories extends React.Component {
             var temp = 'boing';
                 for (var i in this.props.correctiondata){
                     if(parseInt(this.props.correctiondata[i].output.poem_id) === parseInt(key)) {
-                        console.log('yo, corr');
+
                         temp = i;
                     }
 
@@ -80,7 +99,6 @@ export default class Categories extends React.Component {
                 }
                 else
                     children.push(<td key={key}> Uncorrected</td>);
-                console.log(key);
             children.push(<ChangeButton
                 onClick={this.handleClick}
                 value={key}/>);
@@ -121,6 +139,14 @@ export default class Categories extends React.Component {
                 {this.createCategoryOverview()}
                     </tbody>
                 </table>
+                <h3>Want to add another Category ? </h3>
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        New Category:
+                        <input type="text" onChange={this.handleChange} />
+                    </label>
+
+                </form>
                 <h3>Poems available at this interface right now: </h3>
                 <table>
                 {this.createCategoryTable()}

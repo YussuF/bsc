@@ -9,6 +9,8 @@ import Classifier from './Components/classifier.js';
 import Home from './Components/home.js';
 import Header from './Components/Layout/header.js';
 import Categories from './Components/categories.js';
+import axios from 'axios';
+axios.defaults.port = 3001;
 
 //Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
 
@@ -36,6 +38,16 @@ class App extends React.Component {
 
 	onPoemSelection(e){
 	console.log('yo');
+	}
+
+	addCategory(e){
+		console.log('index says hi');
+		console.log(e);
+		axios.post(`/api/category/`, { e })
+			.then(res => {
+				console.log(res);
+				console.log(res.data);
+			})
 	}
 
 
@@ -89,6 +101,7 @@ class App extends React.Component {
 											   correctiondata={this.state.correctiondata}
 											   callbackfromParent={this.myCallback}
 											   onPoemSelection={this.onPoemSelection}
+											   onCategoryAdd={this.addCategory}
 						/>
 					}
 				/>

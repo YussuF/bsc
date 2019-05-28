@@ -65,18 +65,13 @@ class Classifier extends React.Component {
     }
 
 
-
-    //  this.props.machinedata[this.state.poem_id].id
-
     componentDidMount() {
         this.setState({poem_id: parseInt(this.findPoem())}, () => this.checkavailability() );
         this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
     }
 
     checkavailability(){
-
         this.setState({poem_title : this.props.machinedata[this.state.poem_id].id})
-        console.log(this.state.poems_available);
         if(!this.state.poems_available)alert('All Poems corrected');
     }
 
