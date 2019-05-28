@@ -16,7 +16,6 @@ export default class Categories extends React.Component {
     }
 
 
-
     handleClick(e) {
 
         //this.setState({poem_id: e});
