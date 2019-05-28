@@ -116,3 +116,18 @@ nav li{
 tr td{
 	padding: 5px;
 }
+
+.category_wrap{
+	margin: 10px 20px;
+}
+
+.category_head{
+	border-top: 2px solid gray;
+	padding-top: 10px ;
+}
+
+.toolong_p{
+	line-height: 18px;
+	width: 400px;
+	margin-left: 20px;
+}

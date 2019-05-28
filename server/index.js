@@ -50,10 +50,24 @@ app.post('/api/category', (req, res) => {
         var count = Object.keys(json).length + 1;
         var json2 = JSON.stringify(json).substring(0,JSON.stringify(json).length-1 );
         var newCat = ',"Cat' + count + '": "' + req.body.e + '"}';
-        console.log(newCat);
         var final = json2.concat(newCat);
-        console.log(final);
         fs.writeFile("./src/categorymock.json",final, (err) => {
+            if (err) throw err;
+        })
+    })
+})
+
+app.post('/api/categoryremove', (req, res) => {
+
+
+    fs.readFile('./src/categorymock.json', function (err, data) {
+        var json = JSON.parse(data);
+        var count = Object.keys(json).length;
+        var cat = 'Cat' + count;
+        console.log(cat);
+        delete json[cat];
+        console.log(json);
+        fs.writeFile("./src/categorymock.json", JSON.stringify(json), (err) => {
             if (err) throw err;
         })
     })

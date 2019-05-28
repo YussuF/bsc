@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom'
 /*jshint loopfunc:true */
 import ChangeButton from './Categories/change_button.js';
+import axios from "axios";
 
 
 export default class Categories extends React.Component {
@@ -16,6 +17,7 @@ export default class Categories extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleRemove = this.handleRemove.bind(this);
     }
 
 
@@ -41,11 +43,13 @@ export default class Categories extends React.Component {
         this.props.onCategoryAdd(this.state.value);
     }
 
-
-    setRedirect() {
-        this.setState({
-            redirect: true
-        });
+    handleRemove(e){
+        e.preventDefault();
+        axios.post(`/api/categoryremove/`, {})
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
     }
 
     renderRedirect() {
@@ -132,14 +136,14 @@ export default class Categories extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className="category_wrap">
                 <h3>Categories available at this interface right now: </h3>
                 <table>
                     <tbody>
                 {this.createCategoryOverview()}
                     </tbody>
                 </table>
-                <h3>Want to add another Category ? </h3>
+                <h3 className="category_head">Want to add another Category ? </h3>
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         New Category:
@@ -147,7 +151,14 @@ export default class Categories extends React.Component {
                     </label>
 
                 </form>
-                <h3>Poems available at this interface right now: </h3>
+                <h3 className="category_head">Want to remove the last Category ?</h3>
+                <p className="toolong_p"> ATTENTION: This removes the Category with the highest Index.
+                    Do not remove Categories with poems already assigned to them because that can and will break the site.
+                    Future Versions might be able to handle this better. As of now, it's meant to avoid having to deal with typos in newly added Categories.</p>
+                <form onSubmit={this.handleRemove}>
+                    <button>Remove</button>
+                </form>
+                <h3 className="category_head">Poems available at this interface right now: </h3>
                 <table>
                 {this.createCategoryTable()}
                 </table>
