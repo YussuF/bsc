@@ -1,5 +1,7 @@
 body {
-	font: 14px "Century Gothic", Futura, sans-serif;
+	font-family: 'Overpass Mono', monospace;;
+	line-height: 17px;
+	font-size: 14px;
 	height: 100%;
 	width: 100%;
 	background-color: #fff;
@@ -8,6 +10,10 @@ body {
 
 ol, ul {
 	padding-left: 30px;
+}
+
+tspan{
+	font-size: 12px;
 }
 
 .board-row:after {
