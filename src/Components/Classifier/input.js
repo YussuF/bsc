@@ -3,6 +3,7 @@ import axios from 'axios';
 axios.defaults.port = 3001;
 
 
+
 //Input takes care of the right-hand side of the classifier, namely the form for the user-input. Categories for the form are loaded dynamically from categorymock.json. Poem-class detected by NN is filtered from form.
 
 class Input extends React.Component {
@@ -69,7 +70,6 @@ class Input extends React.Component {
 
 
     render(){
-
         return (
             <div className="corrector">
                 <p>Diese Angabe ist</p>

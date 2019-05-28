@@ -93,7 +93,6 @@ class Classifier extends React.Component {
                 <div className="container">
                     <div className="left">
                         <Output machinedata={this.props.machinedata} poem_id={this.state.poem_id} />
-                        <p>Hello{this.props.greeting}</p>
                     </div>
                     <div className="middle">
                         <Poem textdata={this.props.textdata}  poem_title={this.state.poem_title}/>

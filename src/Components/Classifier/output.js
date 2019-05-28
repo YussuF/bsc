@@ -2,7 +2,6 @@ import React from "react";
 
 class Output extends React.Component {
     render(){
-
         return(
             <div className="classifier_output">
                 <p>Dieses Gedicht wurde mit <u>95% Confidence</u> als <b>Parlando</b> klassifiziert.
@@ -15,7 +14,7 @@ class Output extends React.Component {
 
                 </ul>
             </div>
-        );
+        )
     }
 }
 export default Output;

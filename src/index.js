@@ -12,6 +12,7 @@ import Categories from './Components/categories.js';
 import axios from 'axios';
 axios.defaults.port = 3001;
 
+
 //Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
 
 
