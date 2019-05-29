@@ -57,6 +57,13 @@ app.post('/api/category', (req, res) => {
     })
 })
 
+app.post('/api/categoryrename', (req,res) => {
+    console.log('receiving data ...');
+    console.log('body is ',req.body);
+    console.log(JSON.stringify(req.body));
+})
+
+
 app.post('/api/categoryremove', (req, res) => {
 
 

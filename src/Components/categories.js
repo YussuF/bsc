@@ -3,6 +3,62 @@ import { Redirect } from 'react-router-dom'
 /*jshint loopfunc:true */
 import ChangeButton from './Categories/change_button.js';
 import axios from "axios";
+import Popup from 'react-popup';
+
+/** The prompt content component */
+class Prompt extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            value: this.props.defaultValue
+        };
+
+        this.onChange = (e) => this._onChange(e);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.value !== this.state.value) {
+            this.props.onChange(this.state.value);
+        }
+    }
+
+    _onChange(e) {
+        let value = e.target.value;
+
+        this.setState({value: value});
+    }
+
+    render() {
+        return <input type="text" placeholder={this.props.placeholder} className="mm-popup__input" value={this.state.value} onChange={this.onChange} />;
+    }
+}
+
+/** Prompt plugin */
+Popup.registerPlugin('prompt', function (defaultValue, placeholder, callback) {
+    let promptValue = null;
+    let promptChange = function (value) {
+        promptValue = value;
+    };
+
+    this.create({
+        title: 'What\'s your name?',
+        content: <Prompt onChange={promptChange} placeholder={placeholder} value={defaultValue} />,
+        buttons: {
+            left: ['cancel'],
+            right: [{
+                text: 'Save',
+                key: '⌘+s',
+                className: 'success',
+                action: function () {
+                    callback(promptValue);
+                    Popup.close();
+                }
+            }]
+        }
+    });
+});
+
 
 
 export default class Categories extends React.Component {
@@ -65,6 +121,7 @@ export default class Categories extends React.Component {
 
     renameCategory(e){
         console.log(e.target.value);
+        alert()
     }
 
     createRenameTable(){
@@ -72,6 +129,7 @@ export default class Categories extends React.Component {
         let children = [];
         let cats = [];
         let renamebuttons = [];
+        let renameinputs = [];
 
 
         for (var k in this.props.categorydata){
@@ -89,6 +147,11 @@ export default class Categories extends React.Component {
             renamebuttons.push(<td key={this.props.categorydata[key]}><button value={key} onClick={(e) => this.renameCategory(e)}>Rename</button> </td> )
         }
         table.push(<tr key="rename_buttons">{renamebuttons}</tr>)
+
+        for (var key in this.props.categorydata){
+            //renameinputs.push(<td key={this.props.categorydata[key]}><input onChange={() => this.setState({rename[key]: this.value})} value='' type="text"></input></td>);
+        }
+
         return table;
     }
 

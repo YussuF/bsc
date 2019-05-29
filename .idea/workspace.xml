@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aea93c6-cf28-4830-bc07-5081005a4339" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/home.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +19,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+            <state relative-caret-position="60">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -99,15 +108,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/output2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -171,7 +171,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Components/Categories/Change_button.js" />
         <option value="$PROJECT_DIR$/src/Components/Categories/change_button.js" />
-        <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/src/categorymock.json" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/poem.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/input.js" />
@@ -184,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/Components/classifier.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Components/home.js" />
+        <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/src/Components/categories.js" />
       </list>
     </option>
@@ -217,6 +217,11 @@
             <path>
               <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bsc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
@@ -314,15 +319,15 @@
       <workItem from="1559050790680" duration="18573000" />
       <workItem from="1559073569439" duration="955000" />
       <workItem from="1559130374833" duration="11000" />
-      <workItem from="1559130461603" duration="4400000" />
+      <workItem from="1559130461603" duration="5623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116429000" />
+    <option name="totallyTimeSpent" value="117652000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1175" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1175" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -531,13 +536,6 @@
     <entry file="file://$PROJECT_DIR$/src/data3.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/categorymock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -668,10 +666,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+        <state relative-caret-position="60">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
