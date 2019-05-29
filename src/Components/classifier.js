@@ -66,8 +66,18 @@ class Classifier extends React.Component {
 
 
     componentDidMount() {
-        this.setState({poem_id: parseInt(this.findPoem())}, () => this.checkavailability() );
-        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id});
+
+        if(this.isEmpty(this.props.location.state)){
+            console.log('normal');
+            this.setState({poem_id: parseInt(this.findPoem())}, () => this.checkavailability() );
+
+        }
+        else{
+            this.setState({poem_id: this.props.location.state.poem_id2}, () => this.setState({poem_title: this.props.machinedata[this.state.poem_id].id}));
+
+            console.log('else');
+        }
+        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id}, () => console.log(this.state.poem_title));
     }
 
     checkavailability(){
@@ -88,6 +98,7 @@ class Classifier extends React.Component {
 
 
     render() {
+
         return(
             <div className="site">
                 <div className="container">

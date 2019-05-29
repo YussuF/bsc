@@ -28,9 +28,6 @@ export default class Categories extends React.Component {
         }, () => {
             this.setState({redirect:true});
         });
-        //this.setState({redirect: true});
-
-        //this.props.onPoemSelection(e);
     }
 
     handleChange(e){
@@ -38,7 +35,6 @@ export default class Categories extends React.Component {
     }
 
     handleSubmit(e){
-        console.log(this.state.value);
         e.preventDefault();
         this.props.onCategoryAdd(this.state.value);
     }
@@ -53,11 +49,12 @@ export default class Categories extends React.Component {
     }
 
     renderRedirect() {
+
         if (this.state.redirect) {
             return <Redirect to={{
                 pathname: '/classifier',
                 search: '?lol',
-                state: {poem_id2: this.props.poem_id}
+                state: {poem_id2: this.state.poem_id}
             }}/>
         }
     }

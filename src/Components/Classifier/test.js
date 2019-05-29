@@ -30,23 +30,18 @@ class Output extends React.Component {
         let data = [];
         var tempo = this.props.machinedata[this.props.poem_id].distribution;
         var classes = Object.keys(tempo)
-        console.log(classes);
         var counter = 0;
         var temp = '';
         var curr_class = '';
         var curr_dist = '';
         for (var key in this.props.machinedata[this.props.poem_id].distribution) {
-            console.log(data);
             curr_class = classes[counter];
             curr_dist = this.props.machinedata[this.props.poem_id].distribution[key];
             temp = "{ name:'" + classes[counter] + "', confidence:'" + this.props.machinedata[this.props.poem_id].distribution[key] + "',},";
-            console.log(typeof temp);
-            console.log(temp);
             counter++;
             data.push({name:curr_class, confidence:curr_dist,});
 
         }
-        console.log(data);
 
 
         return(
