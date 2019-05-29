@@ -143,3 +143,24 @@ tr td{
 	padding: 5px;
 	border: 2px solid gray;
 }
+
+.recharts-wrapper{
+	margin-left: -40px;
+}
+
+.front_text{
+	text-align: center;
+	margin: 0 10%;
+
+}
+
+.front_head{
+	text-align: center;
+}
+
+
+@media all and (max-width: 1200px) {
+	.recharts-wrapper {
+		display: none;
+	}
+}

@@ -69,7 +69,7 @@ class Classifier extends React.Component {
 
         if(this.isEmpty(this.props.location.state)){
             console.log('normal');
-            this.setState({poem_id: parseInt(this.findPoem())}, () => this.checkavailability() );
+            this.setState({poem_id: parseInt(this.findPoem())}, () => {this.checkavailability(); this.setState({poem_title: this.props.machinedata[this.state.poem_id].id})} );
 
         }
         else{
@@ -77,7 +77,7 @@ class Classifier extends React.Component {
 
             console.log('else');
         }
-        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id}, () => console.log(this.state.poem_title));
+
     }
 
     checkavailability(){

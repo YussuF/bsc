@@ -53,10 +53,13 @@ export default class Categories extends React.Component {
         if (this.state.redirect) {
             return <Redirect to={{
                 pathname: '/classifier',
-                search: '?lol',
                 state: {poem_id2: this.state.poem_id}
             }}/>
         }
+    }
+
+    renameCategory(){
+        
     }
 
 
