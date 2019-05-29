@@ -18,6 +18,7 @@ export default class Categories extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRemove = this.handleRemove.bind(this);
+        this.renameCategory = this.renameCategory.bind(this);
     }
 
 
@@ -58,8 +59,37 @@ export default class Categories extends React.Component {
         }
     }
 
-    renameCategory(){
-        
+    handleRenameSubmit(){
+
+    }
+
+    renameCategory(e){
+        console.log(e.target.value);
+    }
+
+    createRenameTable(){
+        let table = [];
+        let children = [];
+        let cats = [];
+        let renamebuttons = [];
+
+
+        for (var k in this.props.categorydata){
+            cats.push(<td key={this.props.categorydata[k]}>{k}</td>)
+        }
+
+        table.push(<tr key="children2" >{cats}</tr>);
+
+        for (var key in this.props.categorydata){
+            children.push(<td key={this.props.categorydata[key]}> {this.props.categorydata[key]}</td>)
+        }
+        table.push(<tr key="children" >{children}</tr>);
+
+        for (var key in this.props.categorydata){
+            renamebuttons.push(<td key={this.props.categorydata[key]}><button value={key} onClick={(e) => this.renameCategory(e)}>Rename</button> </td> )
+        }
+        table.push(<tr key="rename_buttons">{renamebuttons}</tr>)
+        return table;
     }
 
 
@@ -143,6 +173,11 @@ export default class Categories extends React.Component {
                 {this.createCategoryOverview()}
                     </tbody>
                 </table>
+
+                <h3 className="category_head">Want to rename an existing Category ?</h3>
+                <p>Work in progress</p>
+                {this.createRenameTable()}
+
                 <h3 className="category_head">Want to add another Category ? </h3>
                 <form onSubmit={this.handleSubmit}>
                     <label>
@@ -151,6 +186,7 @@ export default class Categories extends React.Component {
                     </label>
 
                 </form>
+
                 <h3 className="category_head">Want to remove the last Category ?</h3>
                 <p className="toolong_p"> ATTENTION: This removes the Category with the highest Index.
                     Do not remove Categories with poems already assigned to them because that can and will break the site.
@@ -158,6 +194,7 @@ export default class Categories extends React.Component {
                 <form onSubmit={this.handleRemove}>
                     <button>Remove</button>
                 </form>
+
                 <h3 className="category_head">Poems available at this interface right now: </h3>
                 <table>
                 {this.createCategoryTable()}
