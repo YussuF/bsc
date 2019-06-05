@@ -85,7 +85,7 @@ class Input extends React.Component {
                                 onChange={this.handleOptionChange}
                                 className="form-radio-input"
                             />
-                            Korrekt
+                            Korrekt ({this.props.machinedata[this.props.poem_id].class})
                         </label>
                     </div>
                     <p>Falsch, es handelt sich um</p>
