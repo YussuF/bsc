@@ -32,8 +32,8 @@ class Poem extends React.Component {
 
     createLink = (title) => {
         for (var key in this.props.textdata[this.props.poem_title].xml){
-            if(this.props.textdata[this.props.poem_title].xml[key]["DC.source.text"])
-                var link = this.props.textdata[this.props.poem_title].xml[key]["DC.source.text"];
+            if(this.props.textdata[this.props.poem_title].xml[key]["DC.source"])
+                var link = this.props.textdata[this.props.poem_title].xml[key]["DC.source"];
         }
         return <div className="poem_link"><a href={link}>Link to the Lyrikline-Page of this poem. </a><p>(Not working right now, the xml-data from the poem folders is wrong.)</p> </div>;
     }
