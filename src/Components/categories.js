@@ -4,60 +4,7 @@ import { Redirect } from 'react-router-dom'
 import ChangeButton from './Categories/change_button.js';
 import axios from "axios";
 import Popup from 'react-popup';
-
-/** The prompt content component */
-class Prompt extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            value: this.props.defaultValue
-        };
-
-        this.onChange = (e) => this._onChange(e);
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-        if (prevState.value !== this.state.value) {
-            this.props.onChange(this.state.value);
-        }
-    }
-
-    _onChange(e) {
-        let value = e.target.value;
-
-        this.setState({value: value});
-    }
-
-    render() {
-        return <input type="text" placeholder={this.props.placeholder} className="mm-popup__input" value={this.state.value} onChange={this.onChange} />;
-    }
-}
-
-/** Prompt plugin */
-Popup.registerPlugin('prompt', function (defaultValue, placeholder, callback) {
-    let promptValue = null;
-    let promptChange = function (value) {
-        promptValue = value;
-    };
-
-    this.create({
-        title: 'What\'s your name?',
-        content: <Prompt onChange={promptChange} placeholder={placeholder} value={defaultValue} />,
-        buttons: {
-            left: ['cancel'],
-            right: [{
-                text: 'Save',
-                key: '⌘+s',
-                className: 'success',
-                action: function () {
-                    callback(promptValue);
-                    Popup.close();
-                }
-            }]
-        }
-    });
-});
+import Prompt from './Categories/prompt';
 
 
 
@@ -66,6 +13,9 @@ export default class Categories extends React.Component {
         redirect: false,
         poem_id: 42,
         value: '',
+        newcat: '',
+        catnr: '',
+        rename: '',
     }
 
     constructor(props) {
@@ -75,6 +25,7 @@ export default class Categories extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRemove = this.handleRemove.bind(this);
         this.renameCategory = this.renameCategory.bind(this);
+        this.handleRename = this.handleRename.bind(this);
     }
 
 
@@ -115,13 +66,39 @@ export default class Categories extends React.Component {
         }
     }
 
-    handleRenameSubmit(){
-
+    isEmpty(obj) {
+        for(var key in obj) {
+            if(obj.hasOwnProperty(key))
+                return false;
+        }
+        return true;
     }
+
+
+    handleRename(e){
+        let value = e.target.value;
+
+        this.setState({rename: value});
+           }
 
     renameCategory(e){
         console.log(e.target.value);
-        alert()
+        console.log(this.state.rename);
+        var catnr = e.target.value;
+        var catname = this.state.rename;
+        if(this.isEmpty(this.state.rename))alert('empty name');
+        else{
+
+            axios.post(`/api/categoryrename/`, {catnr, catname})
+                .then(res => {
+                    console.log(res);
+                    console.log(res.data);
+                })
+        }
+        //var value = Popup.plugins().prompt('', 'new category name ', function (value) {
+        //    return value;
+        //});
+
     }
 
     createRenameTable(){
@@ -148,9 +125,9 @@ export default class Categories extends React.Component {
         }
         table.push(<tr key="rename_buttons">{renamebuttons}</tr>)
 
-        for (var key in this.props.categorydata){
-            //renameinputs.push(<td key={this.props.categorydata[key]}><input onChange={() => this.setState({rename[key]: this.value})} value='' type="text"></input></td>);
-        }
+        table.push(<tr key="rename_buttons"><td>
+            <label>The new name for the selected category:</label>
+            <input value={this.state.rename} onChange={this.handleRename} type="text"></input></td></tr>)
 
         return table;
     }
@@ -229,7 +206,9 @@ export default class Categories extends React.Component {
 
     render(){
         return(
+
             <div className="category_wrap">
+                <Popup />
                 <h3>Categories available at this interface right now: </h3>
                 <table>
                     <tbody>
@@ -263,6 +242,7 @@ export default class Categories extends React.Component {
                 {this.createCategoryTable()}
                 </table>
                 {this.renderRedirect()}
+
             </div>
         );
     }

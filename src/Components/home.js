@@ -10,7 +10,6 @@ class Home extends React.Component {
                     Here you can correct the neural net's wrongdoings.
                     <br/><br/>
                     By Clicking on <i>Classifier</i> in the upper right, you start the correction.
-                    At the Moment, the <i>Classifier</i> is adjusted to show you the poem-classification with the <b>highest Confidence</b> first.
                     Once you corrected all poems the Interface will give you an alert.
                     However, you can still edit your inputs by just going on correcting (just ignore the alert in that case).<br/>
                     By the way, there's a Bar Chart on <i>Classifier</i>. If you can't see it, your browser width is too small.

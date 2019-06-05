@@ -57,11 +57,7 @@ app.post('/api/category', (req, res) => {
     })
 })
 
-app.post('/api/categoryrename', (req,res) => {
-    console.log('receiving data ...');
-    console.log('body is ',req.body);
-    console.log(JSON.stringify(req.body));
-})
+
 
 
 app.post('/api/categoryremove', (req, res) => {
@@ -78,6 +74,24 @@ app.post('/api/categoryremove', (req, res) => {
             if (err) throw err;
         })
     })
+})
+
+
+app.post('/api/categoryrename', (req, res) => {
+    console.log('receiving data ...');
+    console.log('body is ',req.body);
+    console.log(JSON.stringify(req.body));
+    var catnr = req.body.catnr;
+    console.log(typeof catnr);
+    fs.readFile('./src/categorymock.json', function (err, data) {
+        var json = JSON.parse(data);
+        json[catnr] = req.body.catname;
+        console.log(json);
+        fs.writeFile("./src/categorymock.json", JSON.stringify(json), (err) => {
+            if (err) throw err;
+        })
+    })
+
 })
 
 

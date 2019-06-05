@@ -158,6 +158,14 @@ tr td{
 	text-align: center;
 }
 
+.mm-popup--visible{
+	margin: 0 500px;
+	width: 20%;
+	position: fixed;
+	background: #fff;
+	border: 2px solid;
+}
+
 
 @media all and (max-width: 1200px) {
 	.recharts-wrapper {
