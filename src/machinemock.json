@@ -2,6 +2,7 @@
 {"id":"teils-teils",
 "class":"Parlando",
 "Confidence":"89",
+  "trueclass" : "Parlando",
 "distribution":{"Parlando":"89", "Kadenz":"72", "Variabler Versfuß":"56", "Sprungrhythmus":"20", "Synkopen":"45", "Rubato":"12", "Betontes Enjambement":"35"}},
 {"id":"der-minister-ii-863",
 "class":"Kadenz",

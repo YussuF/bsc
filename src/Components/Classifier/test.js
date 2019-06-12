@@ -22,8 +22,20 @@ class Output extends React.Component {
         return table
     }
 
+    createManualNotice = () => {
+        if (this.isEmpty(this.props.machinedata[this.props.poem_id].trueclass)){
+            return <p>Dieses Gedicht wurde manuell als {this.props.machinedata[this.props.poem_id].trueclass} klassifiziert</p>
+        }
+    }
 
 
+    isEmpty(obj) {
+        for(var key in obj) {
+            if(obj.hasOwnProperty(key))
+                return false;
+        }
+        return true;
+    }
 
     render(){
         let data = [];
@@ -55,6 +67,7 @@ class Output extends React.Component {
                             {this.createConfidenceTable()}
                         </tbody>
                     </table>
+                {this.createManualNotice()}
                 <BarChart
                     width={450}
                     height={300}
