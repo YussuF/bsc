@@ -170,6 +170,10 @@ tr td{
 	color: red;
 }
 
+.marginTop{
+	margin-top: 5px;
+}
+
 @media all and (max-width: 1200px) {
 	.recharts-wrapper {
 		display: none;

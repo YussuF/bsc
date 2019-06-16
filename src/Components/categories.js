@@ -125,9 +125,9 @@ export default class Categories extends React.Component {
         }
         table.push(<tr key="rename_buttons">{renamebuttons}</tr>)
 
-        table.push(<tr key="rename_buttons"><td>
+        table.push(<div className="marginTop" key="rename_buttons">
             <label>The new name for the selected category:</label>
-            <input value={this.state.rename} onChange={this.handleRename} type="text"></input></td></tr>)
+            <input value={this.state.rename} onChange={this.handleRename} type="text"></input></div>)
 
         return table;
     }
@@ -217,7 +217,7 @@ export default class Categories extends React.Component {
                 </table>
 
                 <h3 className="category_head">Want to rename an existing Category ?</h3>
-                <p>Work in progress</p>
+
                 {this.createRenameTable()}
 
                 <h3 className="category_head">Want to add another Category ? </h3>
