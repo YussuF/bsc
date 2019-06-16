@@ -23,8 +23,8 @@ class Output extends React.Component {
     }
 
     createManualNotice = () => {
-        if (this.isEmpty(this.props.machinedata[this.props.poem_id].trueclass)){
-            return <p>Dieses Gedicht wurde manuell als {this.props.machinedata[this.props.poem_id].trueclass} klassifiziert</p>
+        if (!this.isEmpty(this.props.machinedata[this.props.poem_id].trueclass)){
+            return <p>Dieses Gedicht wurde <span className="red"> manuell</span> als {this.props.machinedata[this.props.poem_id].trueclass} klassifiziert</p>
         }
     }
 

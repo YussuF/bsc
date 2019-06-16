@@ -26,8 +26,11 @@ data = {}
 # Now we're getting somewehere. We're iterating over all subdirectories of the folder we gave as an input argument.
 for subdir in os.listdir(rootdir):
 # We're opening the txt.lab in those dirs to get the timings
-  if os.path.isfile(rootdir + '/' + subdir + '/txt.lab'):
-    with open(rootdir + '/' + subdir + '/txt.lab') as f:
+  subfolderpath = os.path.join(rootdir, subdir)
+  txtfile = os.path.join(subfolderpath, 'txt.lab')
+  print(txtfile)
+  if os.path.isfile(txtfile):
+    with open(txtfile) as f:
       # Initializing new arrays for the data we're about to get
        data[subdir] = {} 
        data[subdir]['lines'] = [] 
@@ -48,11 +51,12 @@ for subdir in os.listdir(rootdir):
           'line': linetemp[2]
           })
   else:
-    print('Missing lab.txt in ' + rootdir + '/' + subdir)
+    print('Missing lab.txt in ' + subfolderpath)
   # Now we gotta parse the xml to get some metadata of the poem
   # We're still in that for subdir loop so we do this for all the subdirs aka poems
-  if os.path.isfile(rootdir + '/' + subdir + '/swc'):
-    tree = ET.parse(rootdir + '/' + subdir + '/swc')
+  swcpath = os.path.join(subfolderpath, 'swc')
+  if os.path.isfile(swcpath):
+    tree = ET.parse(swcpath)
 
   # Tree's gotta have roots, bro.
     root = tree.getroot()
@@ -73,13 +77,13 @@ for subdir in os.listdir(rootdir):
             line.attrib['key'].encode('utf-8'): line.attrib['value'].encode('utf-8')
             })
   else:
-    print('Missing SWC in ' + rootdir + '/' + subdir)
+    print('Missing SWC in ' + subfolderpath)
       #print line.attrib['value']
   #print('-------------------------------------')
 
 #print data['lines']
 
-with open('data2.json', 'w') as outfile:  
+with open('data.json', 'w') as outfile:  
   try:
     json.dump(data, outfile, ensure_ascii=False)
     print('Operation successful')

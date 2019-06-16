@@ -166,6 +166,9 @@ tr td{
 	border: 2px solid;
 }
 
+.red{
+	color: red;
+}
 
 @media all and (max-width: 1200px) {
 	.recharts-wrapper {

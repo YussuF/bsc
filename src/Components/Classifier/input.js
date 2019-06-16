@@ -25,12 +25,14 @@ class Input extends React.Component {
             output = {
                 cat: 'unchanged',
                 poem_id: this.props.poem_id,
+                categories: this.props.categorydata,
             }
         } else
 
         output = {
             cat: this.state.selectedOption,
             poem_id: this.props.poem_id,
+            categories: this.props.categorydata,
         }
 
         axios.post(`/api/greeting/`, { output })
