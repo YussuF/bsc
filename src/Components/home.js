@@ -8,7 +8,7 @@ class Home extends React.Component {
                 <p className="front_text">
                     Dies ist das Classification Correction Helper Interface. Hier können die Fehler des neuronalen Netzes ausgemerzt werden, auf dass es lernt.
                     <br/><br/>
-                    Ein Klick auf <i>classifier</i> oben rechts startet die Korrekturen. Nach Korrektur aller Gedichte wird das Interface bescheid geben.
+                    Ein Klick auf <i>classifier</i> oben links startet die Korrekturen. Nach Korrektur aller Gedichte wird das Interface bescheid geben.
                     Allerdings können Änderungen auch nachträglich korrigiert werden (in diesem Falle bitte das popup ignorieren).
                     Nebenbei, der <i>classifier</i> beinhaltet ein Balkendiagramm. Falls es nicht sichtbar sein sollte ist die Browserfensterweite zu gering.
                     <br/><br/>

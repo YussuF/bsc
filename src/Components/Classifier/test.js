@@ -16,7 +16,9 @@ class Output extends React.Component {
         let table = []
         for (var key in this.props.machinedata[this.props.poem_id].distribution) {
             let children = [];
-            children.push(this.props.machinedata[this.props.poem_id].distribution[key] + ' %  ' + key);
+
+            var dist = [this.props.machinedata[this.props.poem_id].distribution[key].toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.poem_id].distribution[key].toString().substr(2).slice(2)].join('');
+            children.push(dist.substring(0,6) + ' %  ' + key);
             table.push(<tr key={this.props.machinedata[this.props.poem_id].distribution[key]}>{children}</tr>);
         }
         return table
@@ -58,7 +60,7 @@ class Output extends React.Component {
         return(
 
             <div className="classifier_output">
-                <p>Dieses Gedicht wurde mit <u>{this.props.machinedata[this.props.poem_id].Confidence}% Confidence</u> als <b>{this.props.machinedata[this.props.poem_id].class}</b> klassifiziert.
+                <p>Dieses Gedicht wurde mit <u>{[this.props.machinedata[this.props.poem_id].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.poem_id].distribution[key].toString().substr(2).slice(2)].join('').substring(0,6)}% Confidence</u> als <b>{this.props.machinedata[this.props.poem_id].class}</b> klassifiziert.
                     Weitere Konfidenzen </p>
 
 

@@ -16,8 +16,8 @@ axios.defaults.port = 3001;
 //Index is the headcomponent of the app, calling all other components. It takes care of routing and loading jsons safely.
 
 
-let textdata = require('./datamock.json');
-let machinedata = require('./machinemock.json');
+let textdata = require('./databaditer.json');
+let machinedata = require('./jasper.json');
 let categorydata = require('./categorymock.json');
 let correctiondata = require('./output2.json');
 
