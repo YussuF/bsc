@@ -55,7 +55,8 @@ export default class Corrected extends React.Component {
                     let children = [];
                     children.push(<td> {this.props.machinedata[corrected_ids[i]].id}</td>);
                     children.push(<td> {this.props.machinedata[corrected_ids[i]].class} </td>);
-                    children.push(<td> {this.props.machinedata[corrected_ids[i]].confidence} </td>)
+                    children.push(<td> {[this.props.machinedata[corrected_ids[i]].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[corrected_ids[i]].confidence.toString().substr(2).slice(2)].join('').substring(0,6)} </td>)
+
                     children.push(<td> {this.props.correctiondata[k].output.cat} </td>);
                     children.push(<ChangeButton
                         onClick={this.handleClick}
