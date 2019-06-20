@@ -6,6 +6,7 @@ export default class Corrected extends React.Component {
 
     state = {
         poem_id: 42,
+        counter: 0,
     }
 
     constructor(props) {
@@ -47,6 +48,7 @@ export default class Corrected extends React.Component {
         for (var k in this.props.correctiondata) {
             corrected_ids.push(this.props.correctiondata[k].output.poem_id)
         }
+        var k = corrected_ids.length-1;
         corrected_ids.reverse();
         for(var i in corrected_ids){
 
@@ -54,11 +56,13 @@ export default class Corrected extends React.Component {
                     children.push(<td> {this.props.machinedata[corrected_ids[i]].id}</td>);
                     children.push(<td> {this.props.machinedata[corrected_ids[i]].class} </td>);
                     children.push(<td> {this.props.machinedata[corrected_ids[i]].confidence} </td>)
-                    children.push(<td> {corrected_ids[i]} </td>);
+                    children.push(<td> {this.props.correctiondata[k].output.cat} </td>);
                     children.push(<ChangeButton
                         onClick={this.handleClick}
                         value={corrected_ids[i]}/>);
                     table.push(<tr>{children}</tr>);
+                    k--;
+                    console.log(k);
 
             }
 
