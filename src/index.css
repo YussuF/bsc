@@ -178,6 +178,12 @@ tr td{
 	margin: 10px 15px;
 }
 
+.Corrected_wrap table{
+	width: 100%;
+	border-top: 2px solid gray;
+	padding-top: 10px ;
+}
+
 @media all and (max-width: 1200px) {
 	.recharts-wrapper {
 		display: none;

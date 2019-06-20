@@ -69,12 +69,41 @@ export default class Corrected extends React.Component {
         return table;
     }
 
+
+    createCategoryOverview = () => {
+        let table = [];
+        let children = [];
+        let cats = [];
+
+        for (var k in this.props.categorydata){
+            cats.push(<td key={this.props.categorydata[k]}>{k}</td>)
+        }
+
+        table.push(<tr key="children2" >{cats}</tr>);
+
+        for (var key in this.props.categorydata){
+            children.push(<td key={this.props.categorydata[key]}> {this.props.categorydata[key]}</td>)
+        }
+        table.push(<tr key="children" >{children}</tr>);
+
+        return table;
+    }
+
     render() {
         return (
             <div className="Corrected_wrap">
                 <h3>Corrected Poems</h3>
                 <p>in order of their correction. The Poem last corrected appears on top of the list</p>
-                {this.createCorrectedOverview()}
+                <table>
+                    <tbody>
+                        {this.createCorrectedOverview()}
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        {this.createCategoryOverview()}
+                    </tbody>
+                </table>
                 {this.renderRedirect()}
             </div>
         );
