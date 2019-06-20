@@ -10,6 +10,7 @@ import Home from './Components/home.js';
 import Header from './Components/Layout/header.js';
 import Categories from './Components/categories.js';
 import axios from 'axios';
+import Corrected from "./Components/corrected";
 axios.defaults.port = 3001;
 
 
@@ -78,6 +79,9 @@ class App extends React.Component {
 					<li>
 						<Link to="/categories/">Categories</Link>
 					</li>
+					<li>
+						<Link to="/corrected/">Corrected</Link>
+					</li>
 				</ul>
 				<Header />
 				<Route path="/" exact component={Home} />
@@ -105,6 +109,18 @@ class App extends React.Component {
 											   callbackfromParent={this.myCallback}
 											   onPoemSelection={this.onPoemSelection}
 											   onCategoryAdd={this.addCategory}
+						/>
+					}
+				/>
+				<Route
+					path="/corrected/"
+					render={
+						(props) => <Corrected {...props}
+											   machinedata={this.state.machinedata}
+											   categorydata={this.state.categorydata}
+											   textdata={this.state.textdata}
+											   greeting={this.state.greeting}
+											   correctiondata={this.state.correctiondata}
 						/>
 					}
 				/>

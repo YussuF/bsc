@@ -214,7 +214,6 @@ export default class Categories extends React.Component {
                 {this.createCategoryOverview()}
                     </tbody>
                 </table>
-
                 <h3 className="category_head">Want to rename an existing Category ?</h3>
 
                 {this.createRenameTable()}

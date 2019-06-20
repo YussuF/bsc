@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aea93c6-cf28-4830-bc07-5081005a4339" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Components/Classifier/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Classifier/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/corrected.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/classifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/classifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/output2.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="277">
+              <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#229#281#0" expanded="true" />
@@ -43,16 +45,16 @@
         <entry file="file://$PROJECT_DIR$/src/output2.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+              <caret column="1410" selection-start-column="1410" selection-end-column="1410" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/categorymock.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="221" selection-start-column="221" selection-end-column="221" />
+              <caret column="106" selection-start-column="106" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -88,15 +90,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/Classifier/input.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="371">
@@ -108,11 +101,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/corrected.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="419">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#97#154#0" expanded="true" />
@@ -152,8 +157,10 @@
       <find>addcateg</find>
       <find>renameinp</find>
       <find>key</find>
-      <find>console</find>
       <find>confiden</find>
+      <find>console</find>
+      <find>renderRedirect</find>
+      <find>handle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,12 +202,13 @@
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Components/home.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/test.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/input.js" />
         <option value="$PROJECT_DIR$/src/Components/classifier.js" />
-        <option value="$PROJECT_DIR$/src/Components/categories.js" />
         <option value="$PROJECT_DIR$/src/output2.json" />
         <option value="$PROJECT_DIR$/src/categorymock.json" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/Components/categories.js" />
+        <option value="$PROJECT_DIR$/src/Components/corrected.js" />
       </list>
     </option>
   </component>
@@ -358,12 +366,12 @@
       <workItem from="1559736700295" duration="6897000" />
       <workItem from="1560340010012" duration="509000" />
       <workItem from="1560686486264" duration="5056000" />
-      <workItem from="1561030093705" duration="6737000" />
+      <workItem from="1561030093705" duration="9589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139280000" />
+    <option name="totallyTimeSpent" value="142132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -393,13 +401,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -666,34 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#229#281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Classifier/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/classifier.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -711,13 +684,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
+    <entry file="file://$PROJECT_DIR$/src/categorymock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state>
+          <caret column="106" selection-start-column="106" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Classifier/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#97#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#229#281#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -725,14 +722,28 @@
     <entry file="file://$PROJECT_DIR$/src/output2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+          <caret column="1410" selection-start-column="1410" selection-end-column="1410" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/categorymock.json">
+    <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="221" selection-start-column="221" selection-end-column="221" />
+        <state relative-caret-position="419">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#97#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/corrected.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
