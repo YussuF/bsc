@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6aea93c6-cf28-4830-bc07-5081005a4339" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Components/corrected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/corrected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/output2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/output2.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1687" selection-start-column="1687" selection-end-column="1687" />
+              <caret column="1964" selection-start-column="1964" selection-end-column="1964" />
             </state>
           </provider>
         </entry>
@@ -57,15 +57,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/classifier.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -73,6 +64,15 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -98,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/corrected.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+            <state relative-caret-position="430">
+              <caret line="73" column="42" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -196,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/Components/Classifier/poem.js" />
         <option value="$PROJECT_DIR$/src/machinemock.json" />
         <option value="$PROJECT_DIR$/server/index.js" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Components/home.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/test.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/input.js" />
@@ -206,6 +205,7 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Components/categories.js" />
         <option value="$PROJECT_DIR$/src/Components/corrected.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
       </list>
     </option>
   </component>
@@ -363,12 +363,12 @@
       <workItem from="1559736700295" duration="6897000" />
       <workItem from="1560340010012" duration="509000" />
       <workItem from="1560686486264" duration="5056000" />
-      <workItem from="1561030093705" duration="10189000" />
+      <workItem from="1561030093705" duration="10501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142732000" />
+    <option name="totallyTimeSpent" value="143044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -650,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -719,7 +712,7 @@
     <entry file="file://$PROJECT_DIR$/src/output2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="1687" selection-start-column="1687" selection-end-column="1687" />
+          <caret column="1964" selection-start-column="1964" selection-end-column="1964" />
         </state>
       </provider>
     </entry>
@@ -736,11 +729,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/corrected.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+        <state relative-caret-position="430">
+          <caret line="73" column="42" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="42" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
         </state>
       </provider>
     </entry>

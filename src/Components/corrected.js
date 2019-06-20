@@ -72,6 +72,8 @@ export default class Corrected extends React.Component {
     render() {
         return (
             <div className="Corrected_wrap">
+                <h3>Corrected Poems</h3>
+                <p>in order of their correction. The Poem last corrected appears on top of the list</p>
                 {this.createCorrectedOverview()}
                 {this.renderRedirect()}
             </div>
