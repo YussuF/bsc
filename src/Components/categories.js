@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom'
 import ChangeButton from './Categories/change_button.js';
 import axios from "axios";
 import Popup from 'react-popup';
-import Prompt from './Categories/prompt';
 
 
 
@@ -106,7 +105,6 @@ export default class Categories extends React.Component {
         let children = [];
         let cats = [];
         let renamebuttons = [];
-        let renameinputs = [];
 
 
         for (var k in this.props.categorydata){
@@ -167,7 +165,8 @@ export default class Categories extends React.Component {
                 let children = [];
                 children.push(<td key={this.props.machinedata[key].id}> {this.props.machinedata[key].id} </td>);
                 children.push(<td key={this.props.machinedata[key].class}> {this.props.machinedata[key].class} </td>);
-                children.push(<td key={this.props.machinedata[key].Confidence}> {this.props.machinedata[key].Confidence} </td>);
+                children.push(<td key={this.props.machinedata[key].Confidence}> {[this.props.machinedata[key].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[key].confidence.toString().substr(2).slice(2)].join('').substring(0,6)} </td>);
+            [this.props.machinedata[key].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[key].confidence.toString().substr(2).slice(2)].join('').substring(0,6)
                 if(!(temp === "boing")) {
                     children.push(<td key={this.props.correctiondata[temp].output.poem_id}> {this.props.correctiondata[temp].output.cat}</td>);
                 }

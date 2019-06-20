@@ -112,7 +112,7 @@ class Input extends React.Component {
 
 
     render(){
-        console.log(this.state.rename.length == 0);
+
         return (
             <div className="corrector">
                 <p>Diese Angabe ist</p>

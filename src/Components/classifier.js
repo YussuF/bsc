@@ -34,36 +34,29 @@ class Classifier extends React.Component {
         for (var k in this.props.correctiondata){
             corrected_ids.push(parseInt(this.props.correctiondata[k].output.poem_id));
         }
-        console.log('corrected_ids:');
-        console.log(corrected_ids);
+
         var loaded_ids = [];
         for (var key2 in this.props.machinedata){
             loaded_ids.push(parseInt(key2));
         }
-        console.log('loaded_ids:');
-        console.log(loaded_ids);
+
         var uncorrected_ids = loaded_ids.filter(
             function(e) {
                 return this.indexOf(e) < 0;
             },
             corrected_ids
         );
-        console.log('uncorre:');
-        console.log(uncorrected_ids);
+
         if (this.isEmpty(uncorrected_ids)){
             this.setState({
                 poems_available: false,
             })
         }
 
-        console.log('test:');
-        console.log(this.props.machinedata[uncorrected_ids[0]].confidence);
-        console.log(this.props.machinedata[uncorrected_ids[0]].confidence > temp);
         for(var i in uncorrected_ids){
             if (this.props.machinedata[uncorrected_ids[i]].confidence > temp) {
                 temp = this.props.machinedata[uncorrected_ids[i]].confidence;
                 res = uncorrected_ids[i];
-                console.log('ever?')
             }
         }
         return parseInt(res);
@@ -72,16 +65,19 @@ class Classifier extends React.Component {
 
     componentDidMount() {
 
+        console.log(this.props)
+
         if(this.isEmpty(this.props.location.state)){
-            console.log('normal');
+
             this.setState({poem_id: parseInt(this.findPoem())}, () => {this.checkavailability(); this.setState({poem_title: this.props.machinedata[this.state.poem_id].id})} );
 
         }
         else{
             this.setState({poem_id: this.props.location.state.poem_id2}, () => this.setState({poem_title: this.props.machinedata[this.state.poem_id].id}));
-
-            console.log('else');
         }
+
+        console.log(this.state.correctiondata)
+
 
     }
 

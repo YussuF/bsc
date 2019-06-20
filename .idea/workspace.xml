@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6aea93c6-cf28-4830-bc07-5081005a4339" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Components/Classifier/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Classifier/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/classifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/classifier.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/output2.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -47,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/categorymock.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/classifier.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="115" column="136" selection-start-line="115" selection-start-column="136" selection-end-line="115" selection-end-column="136" />
+            <state relative-caret-position="45">
+              <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -80,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/Classifier/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="204">
+              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="250" />
             </state>
           </provider>
         </entry>
@@ -98,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/Classifier/input.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="371">
+              <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -110,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="46" column="49" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="49" />
+            <state relative-caret-position="-6">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#97#154#0" expanded="true" />
@@ -142,15 +143,17 @@
       <find>categorymoc</find>
       <find>categorydata</find>
       <find>co</find>
-      <find>console</find>
       <find>Confid</find>
       <find>confi</find>
       <find>11208</find>
       <find>poem_id</find>
       <find>renam</find>
-      <find>confiden</find>
       <find>oncateg</find>
       <find>addcateg</find>
+      <find>renameinp</find>
+      <find>key</find>
+      <find>console</find>
+      <find>confiden</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,14 +193,14 @@
         <option value="$PROJECT_DIR$/src/machinemock.json" />
         <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/Components/categories.js" />
         <option value="$PROJECT_DIR$/src/Components/home.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/test.js" />
-        <option value="$PROJECT_DIR$/src/Components/classifier.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Components/Classifier/input.js" />
-        <option value="$PROJECT_DIR$/src/categorymock.json" />
+        <option value="$PROJECT_DIR$/src/Components/classifier.js" />
+        <option value="$PROJECT_DIR$/src/Components/categories.js" />
         <option value="$PROJECT_DIR$/src/output2.json" />
+        <option value="$PROJECT_DIR$/src/categorymock.json" />
       </list>
     </option>
   </component>
@@ -355,12 +358,12 @@
       <workItem from="1559736700295" duration="6897000" />
       <workItem from="1560340010012" duration="509000" />
       <workItem from="1560686486264" duration="5056000" />
-      <workItem from="1561030093705" duration="5826000" />
+      <workItem from="1561030093705" duration="6737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138369000" />
+    <option name="totallyTimeSpent" value="139280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -663,37 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Classifier/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/classifier.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="115" column="136" selection-start-line="115" selection-start-column="136" selection-end-line="115" selection-end-column="136" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Classifier/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,10 +684,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Classifier/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/classifier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Classifier/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="250" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/categories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="49" />
+        <state relative-caret-position="-6">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#97#154#0" expanded="true" />
@@ -719,17 +722,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/categorymock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="221" selection-start-column="221" selection-end-column="221" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/output2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/categorymock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="221" selection-start-column="221" selection-end-column="221" />
         </state>
       </provider>
     </entry>
