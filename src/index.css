@@ -178,14 +178,28 @@ tr td{
 	margin: 10px 15px;
 }
 
-.Corrected_wrap table{
-	width: 100%;
-	border-top: 2px solid gray;
-	padding-top: 10px ;
-}
-
 @media all and (max-width: 1200px) {
 	.recharts-wrapper {
 		display: none;
 	}
+}
+
+.Catview{
+	position: sticky;
+	width: 20%;
+	table-layout: fixed;
+	float: right;
+	top: 0px !important;
+	margin-top: -83px;
+	border-left: 1px dotted;
+	padding-top: 0;
+	border-top: none;
+}
+
+.Corr_list{
+	width: 80%;
+	table-layout: auto;
+	float: left;
+	border-top: 2px solid gray;
+	padding-top: 10px ;
 }
