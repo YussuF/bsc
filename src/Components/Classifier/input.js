@@ -10,6 +10,26 @@ class Input extends React.Component {
 
     state = {
         selectedOption: "option1",
+        rename: "",
+    }
+
+    constructor(props) {
+        super(props);
+        this.handleRename = this.handleRename.bind(this);
+    }
+
+    handleRename(e){
+        let value = e.target.value;
+
+        this.setState({rename: value});
+    }
+
+    isEmpty(obj) {
+        for(var key in obj) {
+            if(obj.hasOwnProperty(key))
+                return false;
+        }
+        return true;
     }
 
     handleOptionChange = changeEvent => {
@@ -20,26 +40,46 @@ class Input extends React.Component {
 
     handleFormSubmit = formSubmitEvent => {
         formSubmitEvent.preventDefault();
+        var e = this.state.rename;
         var output = {};
-        if (this.state.selectedOption === 'option1') {
+        if(!this.state.rename.length == 0){
             output = {
-                cat: 'unchanged',
+                cat: this.state.rename,
                 poem_id: this.props.poem_id,
                 categories: this.props.categorydata,
-            }
-        } else
+            };
 
-        output = {
-            cat: this.state.selectedOption,
-            poem_id: this.props.poem_id,
-            categories: this.props.categorydata,
+            axios.post(`/api/category/`, { e })
+                .then(res => {
+                    console.log(res);
+                    console.log(res.data);
+                })
         }
+        else{
+            if (this.state.selectedOption === 'option1') {
+                output = {
+                    cat: 'unchanged',
+                    poem_id: this.props.poem_id,
+                    categories: this.props.categorydata,
+                }
+            } else
+
+                output = {
+                    cat: this.state.selectedOption,
+                    poem_id: this.props.poem_id,
+                    categories: this.props.categorydata,
+                }
+        }
+
 
         axios.post(`/api/greeting/`, { output })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             })
+
+
+
     }
 
 
@@ -72,6 +112,7 @@ class Input extends React.Component {
 
 
     render(){
+        console.log(this.state.rename.length == 0);
         return (
             <div className="corrector">
                 <p>Diese Angabe ist</p>
@@ -92,6 +133,8 @@ class Input extends React.Component {
                     </div>
                     <p>Falsch, es handelt sich um</p>
                     {this.createRadioTable()}
+                    <p>Alles quatsch, es handelt sich um</p>
+                    <input value={this.state.rename} onChange={this.handleRename} type="text"></input>
                     <div className="form-submit">
                         <button className="btn form-submit-button" type="submit">
                             Nächstes Gedicht
