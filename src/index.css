@@ -203,3 +203,7 @@ tr td{
 	border-top: 2px solid gray;
 	padding-top: 10px ;
 }
+
+.header h3{
+	margin-top: -42px;
+}
