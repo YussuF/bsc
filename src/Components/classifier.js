@@ -28,37 +28,42 @@ class Classifier extends React.Component {
 
     findPoem = () => {
 
-        var temp = 0;
+        var temp = 0.0;
         var res = 0;
         var corrected_ids = [];
         for (var k in this.props.correctiondata){
             corrected_ids.push(parseInt(this.props.correctiondata[k].output.poem_id));
         }
-
+        console.log('corrected_ids:');
+        console.log(corrected_ids);
         var loaded_ids = [];
         for (var key2 in this.props.machinedata){
             loaded_ids.push(parseInt(key2));
         }
-
+        console.log('loaded_ids:');
+        console.log(loaded_ids);
         var uncorrected_ids = loaded_ids.filter(
             function(e) {
                 return this.indexOf(e) < 0;
             },
             corrected_ids
         );
-
+        console.log('uncorre:');
+        console.log(uncorrected_ids);
         if (this.isEmpty(uncorrected_ids)){
             this.setState({
                 poems_available: false,
             })
         }
 
-
-
+        console.log('test:');
+        console.log(this.props.machinedata[uncorrected_ids[0]].confidence);
+        console.log(this.props.machinedata[uncorrected_ids[0]].confidence > temp);
         for(var i in uncorrected_ids){
-            if (parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence) > temp) {
-                temp = parseInt(this.props.machinedata[uncorrected_ids[i]].Confidence);
+            if (this.props.machinedata[uncorrected_ids[i]].confidence > temp) {
+                temp = this.props.machinedata[uncorrected_ids[i]].confidence;
                 res = uncorrected_ids[i];
+                console.log('ever?')
             }
         }
         return parseInt(res);

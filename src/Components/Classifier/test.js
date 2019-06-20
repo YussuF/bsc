@@ -60,9 +60,8 @@ class Output extends React.Component {
         return(
 
             <div className="classifier_output">
-                <p>Dieses Gedicht wurde mit <u>{[this.props.machinedata[this.props.poem_id].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.poem_id].distribution[key].toString().substr(2).slice(2)].join('').substring(0,6)}% Confidence</u> als <b>{this.props.machinedata[this.props.poem_id].class}</b> klassifiziert.
+                <p>Dieses Gedicht wurde mit <u>{[this.props.machinedata[this.props.poem_id].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.poem_id].confidence.toString().substr(2).slice(2)].join('').substring(0,6)}% Confidence</u> als <b>{this.props.machinedata[this.props.poem_id].class}</b> klassifiziert.
                     Weitere Konfidenzen </p>
-
 
                     <table className="Confidence_table">
                         <tbody>
