@@ -19,7 +19,7 @@ axios.defaults.port = 3001;
 
 let textdata = require('./databaditer.json');
 let machinedata = require('./jasper.json');
-let categorydata = require('./categorymock.json');
+let categorydata = require('./allcategories.json');
 let correctiondata = require('./output2.json');
 
 class App extends React.Component {
