@@ -3,7 +3,6 @@ import ChangeButton from "./Categories/change_button";
 import {Redirect} from "react-router-dom";
 
 export default class Corrected extends React.Component {
-
     state = {
         poem_id: 42,
         counter: 0,
@@ -69,7 +68,6 @@ export default class Corrected extends React.Component {
 
         return table;
     }
-
 
     createCategoryOverview = () => {
         let table = [];
