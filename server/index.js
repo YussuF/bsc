@@ -45,13 +45,13 @@ app.post('/api/category', (req, res) => {
     console.log('body is ',req.body);
     console.log(JSON.stringify(req.body));
     res.send(req.body);
-    fs.readFile('./src/categorymock.json', function (err, data) {
+    fs.readFile('./src/allcategories.json', function (err, data) {
         var json = JSON.parse(data);
         var count = Object.keys(json).length + 1;
         var json2 = JSON.stringify(json).substring(0,JSON.stringify(json).length-1 );
         var newCat = ',"Cat' + count + '": "' + req.body.e + '"}';
         var final = json2.concat(newCat);
-        fs.writeFile("./src/categorymock.json",final, (err) => {
+        fs.writeFile("./src/allcategories.json",final, (err) => {
             if (err) throw err;
         })
     })
@@ -63,14 +63,14 @@ app.post('/api/category', (req, res) => {
 app.post('/api/categoryremove', (req, res) => {
 
 
-    fs.readFile('./src/categorymock.json', function (err, data) {
+    fs.readFile('./src/allcategories.json', function (err, data) {
         var json = JSON.parse(data);
         var count = Object.keys(json).length;
         var cat = 'Cat' + count;
         console.log(cat);
         delete json[cat];
         console.log(json);
-        fs.writeFile("./src/categorymock.json", JSON.stringify(json), (err) => {
+        fs.writeFile("./src/allcategories.json", JSON.stringify(json), (err) => {
             if (err) throw err;
         })
     })
@@ -83,11 +83,11 @@ app.post('/api/categoryrename', (req, res) => {
     console.log(JSON.stringify(req.body));
     var catnr = req.body.catnr;
     console.log(typeof catnr);
-    fs.readFile('./src/categorymock.json', function (err, data) {
+    fs.readFile('./src/allcategories.json', function (err, data) {
         var json = JSON.parse(data);
         json[catnr] = req.body.catname;
         console.log(json);
-        fs.writeFile("./src/categorymock.json", JSON.stringify(json), (err) => {
+        fs.writeFile("./src/allcategories.json", JSON.stringify(json), (err) => {
             if (err) throw err;
         })
     })
