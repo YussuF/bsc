@@ -72,7 +72,7 @@ export default class Corrected extends React.Component {
     createCategoryOverview = () => {
         let table = [];
         let children = [];
-        let cats = [];
+
 
 
 

@@ -14,18 +14,18 @@ class Output extends React.Component {
 
     createConfidenceTable = () => {
         let table = []
-        for (var key in this.props.machinedata[this.props.poem_id].distribution) {
+        for (var key in this.props.machinedata[this.props.old_id].distribution) {
             let children = [];
 
-            var dist = [this.props.machinedata[this.props.poem_id].distribution[key].toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.poem_id].distribution[key].toString().substr(2).slice(2)].join('');
+            var dist = [this.props.machinedata[this.props.old_id].distribution[key].toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.old_id].distribution[key].toString().substr(2).slice(2)].join('');
             children.push(dist.substring(0,6) + ' %  ' + key);
-            table.push(<tr key={this.props.machinedata[this.props.poem_id].distribution[key]}>{children}</tr>);
+            table.push(<tr key={this.props.machinedata[this.props.old_id].distribution[key]}>{children}</tr>);
         }
         return table
     }
 
     createManualNotice = () => {
-        if (!this.isEmpty(this.props.machinedata[this.props.poem_id].trueclass)){
+        if (!this.isEmpty(this.props.machinedata[this.props.old_id].trueclass)){
             return <p>Dieses Gedicht wurde <span className="red"> manuell</span> als {this.props.machinedata[this.props.poem_id].trueclass} klassifiziert</p>
         }
     }
@@ -41,16 +41,16 @@ class Output extends React.Component {
 
     render(){
         let data = [];
-        var tempo = this.props.machinedata[this.props.poem_id].distribution;
+        var tempo = this.props.machinedata[this.props.old_id].distribution;
         var classes = Object.keys(tempo)
         var counter = 0;
         var temp = '';
         var curr_class = '';
         var curr_dist = '';
-        for (var key in this.props.machinedata[this.props.poem_id].distribution) {
+        for (var key in this.props.machinedata[this.props.old_id].distribution) {
             curr_class = classes[counter];
-            curr_dist = this.props.machinedata[this.props.poem_id].distribution[key];
-            temp = "{ name:'" + classes[counter] + "', confidence:'" + this.props.machinedata[this.props.poem_id].distribution[key] + "',},";
+            curr_dist = this.props.machinedata[this.props.old_id].distribution[key];
+            temp = "{ name:'" + classes[counter] + "', confidence:'" + this.props.machinedata[this.props.old_id].distribution[key] + "',},";
             counter++;
             data.push({name:curr_class, confidence:curr_dist,});
 
@@ -60,7 +60,7 @@ class Output extends React.Component {
         return(
 
             <div className="classifier_output">
-                <p>Dieses Gedicht wurde mit <u>{[this.props.machinedata[this.props.poem_id].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.poem_id].confidence.toString().substr(2).slice(2)].join('').substring(0,6)}% Confidence</u> als <b>{this.props.machinedata[this.props.poem_id].class}</b> klassifiziert.
+                <p>Dieses Gedicht wurde mit <u>{[this.props.machinedata[this.props.old_id].confidence.toString().substr(2).slice(0, 2), '.', this.props.machinedata[this.props.old_id].confidence.toString().substr(2).slice(2)].join('').substring(0,6)}% Confidence</u> als <b>{this.props.machinedata[this.props.old_id].class}</b> klassifiziert.
                     Weitere Konfidenzen </p>
 
                     <table className="Confidence_table">

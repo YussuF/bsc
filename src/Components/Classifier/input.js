@@ -58,10 +58,10 @@ class Input extends React.Component {
         }
         else{
             output = {
-                poem_id: this.props.machinedata[this.props.poem_id].id,
-                machinecat : this.props.machinedata[this.props.poem_id].class,
+                poem_id: this.props.machinedata[this.props.old_id].id,
+                machinecat : this.props.machinedata[this.props.old_id].class,
                 cat: this.state.selectedOption,
-                conf: this.props.machinedata[this.props.poem_id].confidence
+                conf: this.props.machinedata[this.props.old_id].confidence
             }
         }
 
@@ -80,9 +80,10 @@ class Input extends React.Component {
     createRadioTable = () => {
         let table = []
         for (var key in this.props.categorydata) {
+
             var i = 1;
             let children = [];
-            if (this.props.categorydata[key] === this.props.machinedata[this.props.poem_id].class)children.push('');
+            if (this.props.categorydata[key] === this.props.machinedata[this.props.old_id].class)children.push('');
             else children.push(<div key={key} className="form-check">
                 <label>
                     <input
@@ -122,7 +123,7 @@ class Input extends React.Component {
                                 onChange={this.handleOptionChange}
                                 className="form-radio-input"
                             />
-                            Korrekt ({this.props.machinedata[this.props.poem_id].class})
+                            Korrekt ({this.props.machinedata[this.props.old_id].class})
                         </label>
                     </div>
                     <p>Falsch, es handelt sich um</p>

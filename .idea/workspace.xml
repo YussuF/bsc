@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aea93c6-cf28-4830-bc07-5081005a4339" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/newoutput.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Classifier/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Classifier/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Classifier/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Classifier/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/classifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/classifier.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/corrected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/corrected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,33 +21,6 @@
       </list>
     </option>
     <option name="SCHEME" value="Project" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>approut</find>
-      <find>close</find>
-      <find>3000</find>
-      <find>output</find>
-      <find>connec</find>
-      <find>children</find>
-      <find>onpoem</find>
-      <find>categorymoc</find>
-      <find>categorydata</find>
-      <find>co</find>
-      <find>Confid</find>
-      <find>confi</find>
-      <find>11208</find>
-      <find>poem_id</find>
-      <find>renam</find>
-      <find>oncateg</find>
-      <find>addcateg</find>
-      <find>renameinp</find>
-      <find>key</find>
-      <find>confiden</find>
-      <find>console</find>
-      <find>renderRedirect</find>
-      <find>handle</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,6 +118,7 @@
       <workItem from="1561138792211" duration="106000" />
       <workItem from="1565697999679" duration="29000" />
       <workItem from="1565698070536" duration="22000" />
+      <workItem from="1565725976612" duration="1840000" />
     </task>
     <servers />
   </component>

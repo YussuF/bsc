@@ -19,6 +19,7 @@ class Classifier extends React.Component {
             poem_id: 0,
             poem_title: 'teils-teils',
             poems_available: true,
+            old_id:0
         };
     }
 
@@ -32,7 +33,7 @@ class Classifier extends React.Component {
         var res = 0;
         var corrected_ids = [];
         for (var k in this.props.correctiondata){
-            corrected_ids.push(parseInt(this.props.correctiondata[k].output.poem_id));
+            corrected_ids.push(this.props.correctiondata[k].output.poem_id);
         }
 
         var loaded_ids = [];
@@ -53,13 +54,25 @@ class Classifier extends React.Component {
             })
         }
 
-        for(var i in uncorrected_ids){
-            if (this.props.machinedata[uncorrected_ids[i]].confidence > temp) {
-                temp = this.props.machinedata[uncorrected_ids[i]].confidence;
-                res = uncorrected_ids[i];
+        for(var j in this.props.machinedata){
+            if (this.props.machinedata[j].confidence > temp){
+                if(!(corrected_ids.includes(this.props.machinedata[j].id))){
+
+                    temp = this.props.machinedata[j].confidence;
+                    res = this.props.machinedata[j].id;
+                    console.log('hier' + temp + 'und' + res);
+                    var old_id = j;
+                    this.setState({
+                        old_id: old_id
+                    }, () => {
+
+                    });
+                }
+
             }
         }
-        return parseInt(res);
+
+        return res;
     }
 
 
@@ -69,7 +82,7 @@ class Classifier extends React.Component {
 
         if(this.isEmpty(this.props.location.state)){
 
-            this.setState({poem_id: parseInt(this.findPoem())}, () => {this.checkavailability(); this.setState({poem_title: this.props.machinedata[this.state.poem_id].id})} );
+            this.setState({poem_id: this.findPoem()}, () => {this.checkavailability(); this.setState({poem_title: this.props.machinedata[this.state.old_id].id})} );
 
         }
         else{
@@ -82,7 +95,7 @@ class Classifier extends React.Component {
     }
 
     checkavailability(){
-        this.setState({poem_title : this.props.machinedata[this.state.poem_id].id})
+        this.setState({poem_title : this.props.machinedata[this.state.old_id].id})
         if(!this.state.poems_available)alert('All Poems corrected');
     }
 
@@ -103,13 +116,13 @@ class Classifier extends React.Component {
             <div className="site">
                 <div className="container">
                     <div className="left">
-                        <Output machinedata={this.props.machinedata} poem_id={this.state.poem_id} />
+                        <Output machinedata={this.props.machinedata} old_id={this.state.old_id} poem_id={this.state.poem_id} />
                     </div>
                     <div className="middle">
                         <Poem textdata={this.props.textdata}  poem_title={this.state.poem_title}/>
                     </div>
                     <div className="right">
-                        <Input machinedata={this.props.machinedata} categorydata={this.props.categorydata} poem_id={this.state.poem_id} />
+                        <Input machinedata={this.props.machinedata} old_id={this.state.old_id} categorydata={this.props.categorydata} poem_id={this.state.poem_id} />
                     </div>
                 </div>
             </div>
