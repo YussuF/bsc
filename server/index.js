@@ -21,15 +21,6 @@ var fs = require('fs'); /* Put it where other modules included */
 let greeting = [];
 
 
-
-
-
-
-
-
-
-
-
 app.get('/api/greeting', (req, res) => {
     var data = JSON.parse(fs.readFileSync('./output.json', 'utf8')); /* Inside the get function */
     const name = req.query.name || 'World';
@@ -93,8 +84,6 @@ app.post('/api/categoryrename', (req, res) => {
     })
 
 })
-
-
 
 app.post('/api/greeting', (req, res) => {
     console.log('receiving data ...');
