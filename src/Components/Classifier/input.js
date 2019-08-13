@@ -33,21 +33,28 @@ class Input extends React.Component {
     }
 
     handleOptionChange = changeEvent => {
+
+
         this.setState({
             selectedOption: changeEvent.target.value
         });
+        console.log(this.props.machinedata[this.props.poem_id].id);
+        console.log(this.props.machinedata[this.props.poem_id].class);
+        console.log(this.state.selectedOption);
+        console.log(this.props.machinedata[this.props.poem_id].confidence)
     };
 
     handleFormSubmit = formSubmitEvent => {
         formSubmitEvent.preventDefault();
         var e = this.state.rename;
-        var output = {};
+
         if(!this.state.rename.length == 0){
-            output = {
-                cat: this.state.rename,
-                poem_id: this.props.poem_id,
-                categories: this.props.categorydata,
-            };
+            var output = [
+                this.props.machinedata[this.props.poem_id].id,
+                this.props.machinedata[this.props.poem_id].class,
+                this.state.rename,
+                this.props.machinedata[this.props.poem_id].confidence
+            ];
 
             axios.post(`/api/category/`, { e })
                 .then(res => {
@@ -56,19 +63,12 @@ class Input extends React.Component {
                 })
         }
         else{
-            if (this.state.selectedOption === 'option1') {
-                output = {
-                    cat: 'unchanged',
-                    poem_id: this.props.poem_id,
-                    categories: this.props.categorydata,
-                }
-            } else
-
-                output = {
-                    cat: this.state.selectedOption,
-                    poem_id: this.props.poem_id,
-                    categories: this.props.categorydata,
-                }
+            var output = [
+                this.props.machinedata[this.props.poem_id].id,
+                this.props.machinedata[this.props.poem_id].class,
+                this.state.selectedOption,
+                this.props.machinedata[this.props.poem_id].confidence
+            ];
         }
 
 
@@ -94,8 +94,8 @@ class Input extends React.Component {
                     <input
                         type="radio"
                         name="input_form_radio"
-                        value={key}
-                        checked={this.state.selectedOption === key}
+                        value={this.props.categorydata[key]}
+                        checked={this.state.selectedOption === this.props.categorydata[key]}
                         onChange={this.handleOptionChange}
                         className="form-radio-input"
                     />
@@ -108,7 +108,11 @@ class Input extends React.Component {
         return table
     }
 
+componentDidMount() {
 
+
+
+}
 
 
     render(){
@@ -124,7 +128,7 @@ class Input extends React.Component {
                                 type="radio"
                                 name="input_form_radio"
                                 value="option1"
-                                checked={this.state.selectedOption === "option1"}
+                                checked={this.state.selectedOption === "unchanged"}
                                 onChange={this.handleOptionChange}
                                 className="form-radio-input"
                             />
