@@ -20,7 +20,7 @@ axios.defaults.port = 3001;
 let textdata = require('./textdata.json');
 let machinedata = require('./machinedata.json');
 let categorydata = require('./allcategories.json');
-let correctiondata = require('./output2.json');
+let correctiondata = require('./newoutput.json');
 
 class App extends React.Component {
 
