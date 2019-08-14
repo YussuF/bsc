@@ -1,0 +1,1904 @@
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat8',
+[0]      poem_id: 1412,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat8","poem_id":1412,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 13.036 ms
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[1] Compiling...
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat7',
+[0]      poem_id: 779,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat7","poem_id":779,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 796 - 16.759 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat18',
+[0]      poem_id: 1214,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat18","poem_id":1214,"categories":{"Cat1":"Prosagedicht",
+"Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6
+":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"
+Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","
+Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut
+-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubat
+o","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Ca
+t24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe"
+,"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektge
+dicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 798 - 14.789 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat15',
+[0]      poem_id: 1943,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat15","poem_id":1943,"categories":{"Cat1":"Prosagedicht",
+"Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6
+":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"
+Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","
+Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut
+-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubat
+o","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Ca
+t24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe"
+,"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektge
+dicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 798 - 18.433 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat13',
+[0]      poem_id: 1024,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat13","poem_id":1024,"categories":{"Cat1":"Prosagedicht",
+"Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6
+":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"
+Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","
+Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut
+-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubat
+o","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Ca
+t24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe"
+,"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektge
+dicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 798 - 14.604 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat18',
+[0]      poem_id: 629,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat18","poem_id":629,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 14.714 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat3',
+[0]      poem_id: 454,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat3","poem_id":454,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 796 - 16.766 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat8',
+[0]      poem_id: 1555,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat8","poem_id":1555,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 15.221 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat18',
+[0]      poem_id: 626,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat18","poem_id":626,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 13.891 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat4',
+[0]      poem_id: 1715,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat4","poem_id":1715,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 14.366 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat15',
+[0]      poem_id: 1655,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat15","poem_id":1655,"categories":{"Cat1":"Prosagedicht",
+"Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6
+":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"
+Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","
+Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut
+-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubat
+o","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Ca
+t24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe"
+,"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektge
+dicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 798 - 13.478 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] GET / 200 25 - 15.907 ms
+[0] GET / 200 25 - 2.393 ms
+[0] GET / 200 25 - 3.201 ms
+[0] GET / 200 25 - 3.037 ms
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat1',
+[0]      poem_id: 329,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat1","poem_id":329,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 796 - 496.015 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat1',
+[0]      poem_id: 329,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat1","poem_id":329,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 796 - 16.862 ms
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat1',
+[0]      poem_id: 329,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat1","poem_id":329,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 796 - 1.766 ms
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat1',
+[0]      poem_id: 329,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat1","poem_id":329,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 796 - 0.545 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat8',
+[0]      poem_id: 1083,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat8","poem_id":1083,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 15.292 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat8',
+[0]      poem_id: 1597,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat8","poem_id":1597,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 797 - 13.077 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat25',
+[0]      poem_id: 1582,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Cat25","poem_id":1582,"categories":{"Cat1":"Prosagedicht",
+"Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6
+":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"
+Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","
+Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut
+-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubat
+o","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Ca
+t24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe"
+,"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektge
+dicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}}}
+[0] POST /api/greeting/ 200 798 - 17.273 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { e: 'Daktylus' }
+[0] {"e":"Daktylus"}
+[0] POST /api/category/ 200 16 - 13.648 ms
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Daktylus',
+[0]      poem_id: 640,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora' } } }
+[0] {"output":{"cat":"Daktylus","poem_id":640,"categories":{"Cat1":"Prosagedicht
+","Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Ca
+t6":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10"
+:"Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation"
+,"Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"C
+ut-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rub
+ato","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","
+Cat24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Stroph
+e","Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialekt
+gedicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"}
+}}
+[0] POST /api/greeting/ 200 800 - 2.007 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat7',
+[0]      poem_id: 1485,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Cat7","poem_id":1485,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora","Ca
+t35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 816 - 14.576 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat7',
+[0]      poem_id: 216,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Cat7","poem_id":216,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora","Cat
+35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 815 - 14.133 ms
+[0] [nodemon] restarting due to changes...
+[1] Compiling...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat18',
+[0]      poem_id: 787,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Cat18","poem_id":787,"categories":{"Cat1":"Prosagedicht","
+Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6"
+:"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"S
+prungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","C
+at14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-
+ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato
+","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat
+24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe",
+"Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektged
+icht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora","Ca
+t35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 816 - 14.552 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Cat1',
+[0]      poem_id: 608,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Cat1","poem_id":608,"categories":{"Cat1":"Prosagedicht","C
+at2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","Cat6":
+"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10":"Sp
+rungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation","Ca
+t14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"Cut-u
+ps","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Rubato"
+,"Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition","Cat2
+4":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strophe","
+Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialektgedi
+cht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora","Cat
+35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 815 - 14.459 ms
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[1] Compiling...
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Parataxen',
+[0]      poem_id: 217,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Parataxen","poem_id":217,"categories":{"Cat1":"Prosagedich
+t","Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","C
+at6":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10
+":"Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation
+","Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"
+Cut-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Ru
+bato","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition",
+"Cat24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strop
+he","Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialek
+tgedicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"
+,"Cat35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 820 - 14.562 ms
+[0] receiving data ...
+[0] body is  { e: 'Parataxen' }
+[0] {"e":"Parataxen"}
+[0] POST /api/category/ 200 17 - 1.409 ms
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Compiled with warnings.
+[1]
+[1] ./src/Components/categories.js
+[1]   Line 121:  'key' is already defined  no-redeclare
+[1]
+[1] ./src/Components/corrected.js
+[1]   Line 37:  'cats' is assigned a value but never used  no-unused-vars
+[1]   Line 50:  'k' is already defined                     no-redeclare
+[1]   Line 75:  'cats' is assigned a value but never used  no-unused-vars
+[1]
+[1] ./src/Components/Classifier/input.js
+[1]   Line 45:  Expected '===' and instead saw '=='  eqeqeq
+[1]
+[1] ./src/Components/Classifier/test.js
+[1]   Line 8:   'Cell' is defined but never used           no-unused-vars
+[1]   Line 47:  'temp' is assigned a value but never used  no-unused-vars
+[1]
+[1] Search for the keywords to learn more about each warning.
+[1] To ignore, add // eslint-disable-next-line to the line before.
+[1]
+[0] receiving data ...
+[0] body is  { e: 'Parataxen' }
+[0] {"e":"Parataxen"}
+[0] POST /api/category/ 200 17 - 12.275 ms
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Parataxen',
+[0]      poem_id: 217,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Parataxen","poem_id":217,"categories":{"Cat1":"Prosagedich
+t","Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","C
+at6":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10
+":"Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation
+","Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"
+Cut-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Ru
+bato","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition",
+"Cat24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strop
+he","Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialek
+tgedicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"
+,"Cat35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 820 - 1.136 ms
+[0] receiving data ...
+[0] body is  { e: 'Parataxen' }
+[0] {"e":"Parataxen"}
+[0] POST /api/category/ 200 17 - 0.361 ms
+[0] receiving data ...
+[0] body is  { output:
+[0]    { cat: 'Parataxen',
+[0]      poem_id: 217,
+[0]      categories:
+[0]       { Cat1: 'Prosagedicht',
+[0]         Cat2: 'Langzeiler',
+[0]         Cat3: 'Reihungsstil',
+[0]         Cat4: 'Kadenz',
+[0]         Cat5: 'Litanei',
+[0]         Cat6: 'Loops',
+[0]         Cat7: 'Parlando',
+[0]         Cat8: 'Variabler Versfuß',
+[0]         Cat9: 'Stanze',
+[0]         Cat10: 'Sprungrhythmus',
+[0]         Cat11: 'Synkopen',
+[0]         Cat12: 'Flows',
+[0]         Cat13: 'Freie Assoziation',
+[0]         Cat14: 'Hakenstil',
+[0]         Cat15: 'Gestischer Rhythmus',
+[0]         Cat16: 'Montagen',
+[0]         Cat17: 'Cut-ups',
+[0]         Cat18: 'Ellipsen',
+[0]         Cat19: 'Stakkato',
+[0]         Cat20: 'Permutation',
+[0]         Cat21: 'Rubato',
+[0]         Cat22: 'Syllabische Dekomposition',
+[0]         Cat23: 'Lettristische Dekomposition',
+[0]         Cat24: 'Trochäus',
+[0]         Cat25: 'Jambus',
+[0]         Cat26: 'Prolepse',
+[0]         Cat27: 'Sapphische Strophe',
+[0]         Cat28: 'D',
+[0]         Cat29: 'Freie Dissoziation',
+[0]         Cat30: 'Hypotaxen',
+[0]         Cat31: 'Dialektgedicht',
+[0]         Cat32: 'Listengedicht',
+[0]         Cat33: 'Mittelachsenlyrik',
+[0]         Cat34: 'Anaphora',
+[0]         Cat35: 'Daktylus' } } }
+[0] {"output":{"cat":"Parataxen","poem_id":217,"categories":{"Cat1":"Prosagedich
+t","Cat2":"Langzeiler","Cat3":"Reihungsstil","Cat4":"Kadenz","Cat5":"Litanei","C
+at6":"Loops","Cat7":"Parlando","Cat8":"Variabler Versfuß","Cat9":"Stanze","Cat10
+":"Sprungrhythmus","Cat11":"Synkopen","Cat12":"Flows","Cat13":"Freie Assoziation
+","Cat14":"Hakenstil","Cat15":"Gestischer Rhythmus","Cat16":"Montagen","Cat17":"
+Cut-ups","Cat18":"Ellipsen","Cat19":"Stakkato","Cat20":"Permutation","Cat21":"Ru
+bato","Cat22":"Syllabische Dekomposition","Cat23":"Lettristische Dekomposition",
+"Cat24":"Trochäus","Cat25":"Jambus","Cat26":"Prolepse","Cat27":"Sapphische Strop
+he","Cat28":"D","Cat29":"Freie Dissoziation","Cat30":"Hypotaxen","Cat31":"Dialek
+tgedicht","Cat32":"Listengedicht","Cat33":"Mittelachsenlyrik","Cat34":"Anaphora"
+,"Cat35":"Daktylus"}}}
+[0] POST /api/greeting/ 200 820 - 1.504 ms
+[0] [nodemon] restarting due to changes...
+[1] Compiling...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node /home/webuser/bsc/server`
+[0] Express server is running on localhost:3001
+[1] Failed to compile.
+[1]
+[1] ./src/allcategories.json
+[1] Module parse failed: Unexpected end of JSON input while parsing near ''
+[1] You may need an appropriate loader to handle this file type.
+[1] SyntaxError: Unexpected end of JSON input while parsing near ''
+[1]     at JSON.parse (<anonymous>)
+
+
