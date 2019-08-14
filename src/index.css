@@ -70,7 +70,7 @@ tspan{
 }
 
 .left, .middle, .right{
-	width: 32%;
+	width: 29%;
 	float: left;
 	position: relative;
 	border-right: 1px solid #000;
@@ -81,11 +81,15 @@ tspan{
 }
 .middle{
 	margin: 0 5px  ;
+	width: 47%;
 }
 .right{
 	margin: 0 5px  ;
 	border: none;
+	width: 20%;
 }
+
+
 .header{
 	width: 100%;
 	text-align: center;

@@ -11,6 +11,7 @@ export default class Corrected extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+
     }
 
     renderRedirect() {
@@ -37,6 +38,7 @@ export default class Corrected extends React.Component {
         let cats = [];
         let header = [];
         let corrected_ids = [];
+        var id_dict = {}
 
         header.push(<th key="poem_id">Poem Id</th>);
         header.push(<th key="poem_class">Poem Class</th>);
@@ -47,8 +49,18 @@ export default class Corrected extends React.Component {
         for (var k in this.props.correctiondata) {
             corrected_ids.push(this.props.correctiondata[k].output.poem_id)
         }
+
+        for(var k in corrected_ids){
+            for(var l in this.props.machinedata){
+                if(corrected_ids[k] == this.props.machinedata[l].id){
+                    id_dict[corrected_ids[k]] = l;
+                }
+            }
+        }
+        console.log(id_dict);
         var k = corrected_ids.length-1;
         corrected_ids.reverse();
+        //alert(corrected_ids.length);
         for(var i in corrected_ids){
 
                     let children = [];
@@ -59,7 +71,7 @@ export default class Corrected extends React.Component {
                     children.push(<td> {this.props.correctiondata[k].output.cat} </td>);
                     children.push(<ChangeButton
                         onClick={this.handleClick}
-                        value={corrected_ids[i]}/>);
+                        value={id_dict[this.props.correctiondata[k].output.poem_id]}/>);
                     table.push(<tr>{children}</tr>);
                     k--;
                     console.log(k);
